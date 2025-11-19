@@ -458,9 +458,9 @@
                             <td>
                                 <span class="aef-label label-aef-outcome">Outcomes</span>
                                 <div class="aspiration-text">
-                                    <strong>E3:</strong> Amelia will be meeting age related expectations in literacy (specifically spelling, punctuation and grammar) and numeracy as evidenced by appropriate assessments and ongoing teacher evaluations.<br><br>
-                                    <strong>E4:</strong> Amelia will utilise at least two alternative methods for recording information in academic settings, such as speech-to-text software or word processors and report a positive impact on her learning experience.<br><br>
-                                    <strong>E6:</strong> Amelia will successfully transition to a full time EOTAS package, maintaining active engagement in her educational activities at least 80% of the time, whether attending in-person or through alternative educational provisions.
+                                    <strong>E3:</strong> <s>Amelia will be meeting age related expectations in literacy (specifically spelling, punctuation and grammar) and numeracy as evidenced by appropriate assessments and ongoing teacher evaluations.</s> <strong>By [DATE], Amelia will improve her spelling accuracy from [BASELINE %] to [TARGET %] in written work of at least 100 words, as measured by standardized spelling assessments (e.g., WRAT-5) administered termly. Separately, she will demonstrate age-appropriate understanding of [SPECIFIC NUMERACY SKILLS] scoring at least [TARGET SCORE] on [SPECIFIC ASSESSMENT], up from current baseline of [BASELINE SCORE].</strong><br><br>
+                                    <strong>E4:</strong> <s>Amelia will utilise at least two alternative methods for recording information in academic settings, such as speech-to-text software or word processors and report a positive impact on her learning experience.</s> <strong>Within [TIMEFRAME], Amelia will independently use at least two assistive technology methods (Dragon speech-to-text software AND word processor with spell-check) in 80% or more of written assignments requiring more than 50 words, as documented in teacher records. Impact will be measured by comparing completion rates and work quality (using rubric scoring) before and after implementation.</strong><br><br>
+                                    <strong>E6:</strong> <s>Amelia will successfully transition to a full time EOTAS package, maintaining active engagement in her educational activities at least 80% of the time, whether attending in-person or through alternative educational provisions.</s> <strong>By [DATE], Amelia will consistently attend and actively participate in her full-time EOTAS package (28 hours/week) for at least 80% of scheduled sessions over a [TIMEFRAME] period, with "active engagement" defined as: on-task behavior, completing assigned work, asking questions when needed, and responding to teacher prompts, as measured by weekly teacher logs and engagement checklists. Baseline engagement: [CURRENT %].</strong>
                                 </div>
                             </td>
                             <td>
@@ -501,8 +501,8 @@
                             <td>
                                 <span class="aef-label label-aef-outcome">Outcomes</span>
                                 <div class="aspiration-text">
-                                    <strong>E3:</strong> Amelia will be meeting age related expectations in literacy (specifically spelling, punctuation and grammar) and numeracy as evidenced by appropriate assessments and ongoing teacher evaluations (essential for GCSE preparation and Hartpury College entry).<br><br>
-                                    <strong>E6:</strong> Amelia will successfully transition to a full time EOTAS package, maintaining active engagement in her educational activities at least 80% of the time, to build the academic foundation needed for veterinary medicine.
+                                    <s><strong>E3:</strong> Amelia will be meeting age related expectations in literacy (specifically spelling, punctuation and grammar) and numeracy as evidenced by appropriate assessments and ongoing teacher evaluations (essential for GCSE preparation and Hartpury College entry).</s> <strong>[DUPLICATE - See E3 above. This should reference specific science achievement targets instead, e.g., "By [DATE], Amelia will achieve [TARGET GRADE/LEVEL] in Biology, Chemistry, and Physics assessments aligned with GCSE specifications, demonstrating mastery of [SPECIFIC TOPICS] required for Hartpury College veterinary medicine entry."]</strong><br><br>
+                                    <s><strong>E6:</strong> Amelia will successfully transition to a full time EOTAS package, maintaining active engagement in her educational activities at least 80% of the time, to build the academic foundation needed for veterinary medicine.</s> <strong>[DUPLICATE - See E6 above. Instead, add career-specific outcome: "By [DATE], Amelia will complete at least [NUMBER] hours of animal-related volunteering/observation at Cheltenham Animal Shelter, demonstrating understanding of [SPECIFIC SKILLS] relevant to veterinary medicine, as documented in a reflective log reviewed termly."]</strong>
                                 </div>
                             </td>
                             <td>
@@ -540,8 +540,8 @@
                             <td>
                                 <span class="aef-label label-aef-outcome">Outcomes</span>
                                 <div class="aspiration-text">
-                                    <strong>E4:</strong> Amelia will utilise at least two alternative methods for recording information in academic settings, such as speech-to-text software or word processors (useful for fashion design documentation and portfolio development).<br><br>
-                                    Outcomes related to creative and business skills development through curriculum activities.
+                                    <s><strong>E4:</strong> Amelia will utilise at least two alternative methods for recording information in academic settings, such as speech-to-text software or word processors (useful for fashion design documentation and portfolio development).</s> <strong>[DUPLICATE - See E4 above]</strong><br><br>
+                                    <s>Outcomes related to creative and business skills development through curriculum activities.</s> <strong>[TOO VAGUE - NOT AN OUTCOME. Replace with specific, measurable outcome: "By [DATE], Amelia will design and create at least [NUMBER] fashion-related items (e.g., garments, sketches, digital designs) and document her design process using assistive technology, demonstrating application of [SPECIFIC SKILLS] taught in Business Studies and Art/Design sessions, as evidenced by a portfolio reviewed termly."]</strong>
                                 </div>
                             </td>
                             <td>
@@ -578,8 +578,8 @@
                             <td>
                                 <span class="aef-label label-aef-outcome">Outcomes</span>
                                 <div class="aspiration-text">
-                                    <strong>E6:</strong> Amelia will successfully transition to a full time EOTAS package, maintaining active engagement in her educational activities at least 80% of the time. She will be able to request support with personal care and mobility from a key adult when required.<br><br>
-                                    <strong>E7:</strong> Amelia will identify and utilise at least three effective strategies when sensory overload occurs, for example making use of a quiet space in the learning environment, as verified by education leaders.
+                                    <s><strong>E6:</strong> Amelia will successfully transition to a full time EOTAS package, maintaining active engagement in her educational activities at least 80% of the time. She will be able to request support with personal care and mobility from a key adult when required.</s> <strong>[COMBINES TWO UNRELATED OUTCOMES. Split into: E6a (engagement - see above) and NEW outcome: "By [DATE], Amelia will independently request support for personal care and mobility needs from a key adult in at least 90% of situations where support is required, as documented in daily logs. Baseline: [CURRENT %]. This demonstrates self-advocacy skills essential for independence."]</strong><br><br>
+                                    <strong>E7:</strong> <s>Amelia will identify and utilise at least three effective strategies when sensory overload occurs, for example making use of a quiet space in the learning environment, as verified by education leaders.</s> <strong>By [DATE], when experiencing sensory overload (defined as [OBSERVABLE SIGNS]), Amelia will independently implement at least one of three identified personalized regulation strategies (e.g., accessing quiet space, using noise-cancelling headphones, requesting sensory break) in 75% or more of observed incidents, up from baseline of [CURRENT %], as documented in incident logs and observation records. Additionally, she will demonstrate knowledge of all three strategies when asked during termly reviews.</strong>
                                 </div>
                             </td>
                             <td>
@@ -618,8 +618,8 @@
                             <td>
                                 <span class="aef-label label-aef-outcome">Outcomes</span>
                                 <div class="aspiration-text">
-                                    <strong>E2:</strong> Amelia will be able to participate in small group activities with up to three peers who share similar interests and hobbies, for 20 minutes, three times weekly (archery provides this social opportunity).<br><br>
-                                    <strong>E7:</strong> Amelia will identify and utilise at least three effective strategies when sensory overload occurs (archery as a regulating activity).
+                                    <strong>E2:</strong> <s>Amelia will be able to participate in small group activities with up to three peers who share similar interests and hobbies, for 20 minutes, three times weekly (archery provides this social opportunity).</s> <strong>By [DATE], Amelia will actively participate in small group activities (defined as: being present, engaging with the activity, and tolerating proximity to others) with 1-3 peers for a minimum of 20 minutes per session, at least 3 times weekly across [SPECIFY SETTINGS: e.g., archery club, animal shelter], up from baseline of [CURRENT FREQUENCY/DURATION]. Success measured by activity logs and staff observations. Note: "share similar interests" requirement may limit opportunities - consider broadening to "structured group activities" instead.</strong><br><br>
+                                    <s><strong>E7:</strong> Amelia will identify and utilise at least three effective strategies when sensory overload occurs (archery as a regulating activity).</s> <strong>[DUPLICATE - See E7 above. If archery is a regulation strategy, it should be listed as one of the three specific strategies in E7, not as a separate outcome.]</strong>
                                 </div>
                             </td>
                             <td>
@@ -657,8 +657,8 @@
                             <td>
                                 <span class="aef-label label-aef-outcome">Outcomes</span>
                                 <div class="aspiration-text">
-                                    <strong>E2:</strong> Amelia will be able to participate in small group activities with up to three peers who share similar interests and hobbies, for 20 minutes, three times weekly (animal shelter provides this opportunity).<br><br>
-                                    <strong>E6:</strong> Amelia will be able to request support with personal care and mobility from a key adult when required (including support for service dog management).
+                                    <s><strong>E2:</strong> Amelia will be able to participate in small group activities with up to three peers who share similar interests and hobbies, for 20 minutes, three times weekly (animal shelter provides this opportunity).</s> <strong>[DUPLICATE - See E2 above]</strong><br><br>
+                                    <s><strong>E6:</strong> Amelia will be able to request support with personal care and mobility from a key adult when required (including support for service dog management).</s> <strong>[DUPLICATE/PARTIAL - See E6 above. Service dog management could be a separate outcome if it requires specific skills: "By [DATE], Amelia will demonstrate independent service dog management skills including [SPECIFIC TASKS: e.g., giving commands, managing equipment, requesting assistance when needed] in 85% of observed situations, as documented in activity logs."]</strong>
                                 </div>
                             </td>
                             <td>
@@ -701,7 +701,7 @@
                             <td>
                                 <span class="aef-label label-aef-outcome">Outcomes</span>
                                 <div class="aspiration-text">
-                                    <strong>All Outcomes E1-E7</strong> contribute to Amelia's overall wellbeing and happiness by addressing her communication, learning, emotional, and physical needs holistically to enable her to reach her potential.
+                                    <s><strong>All Outcomes E1-E7</strong> contribute to Amelia's overall wellbeing and happiness by addressing her communication, learning, emotional, and physical needs holistically to enable her to reach her potential.</s> <strong>[NOT AN OUTCOME - This is a summary statement. Wellbeing must be measurable. Replace with specific outcome: "By [DATE], Amelia will report an improvement in self-rated wellbeing from [BASELINE SCORE] to [TARGET SCORE] using an age-appropriate wellbeing scale (e.g., Warwick-Edinburgh Mental Wellbeing Scale adapted for young people) administered termly, AND parents will report [TARGET %] satisfaction with Amelia's happiness and quality of life on a structured questionnaire, up from baseline of [CURRENT %]."]</strong>
                                 </div>
                             </td>
                             <td>
@@ -740,10 +740,10 @@
                             <td>
                                 <span class="aef-label label-aef-outcome">Outcomes</span>
                                 <div class="aspiration-text">
-                                    <strong>E1:</strong> On a daily basis, Amelia will be able to independently initiate conversations and seek assistance through questions (developing independence in communication).<br><br>
-                                    <strong>E4:</strong> Amelia will utilise at least two alternative methods for recording information independently.<br><br>
-                                    <strong>E5:</strong> Amelia will demonstrate the ability to express her emotions using an agreed strategy to trusted adults in 90% of situations (emotional independence).<br><br>
-                                    <strong>E6:</strong> She will be able to request support with personal care and mobility from a key adult when required (advocating for own needs).
+                                    <strong>E1:</strong> <s>On a daily basis, Amelia will be able to independently initiate conversations and seek assistance through questions (developing independence in communication).</s> <strong>By [DATE], Amelia will independently initiate conversations with trusted adults at least [NUMBER] times per day, and ask questions to seek assistance when needed in at least 80% of situations where help is required (e.g., understanding tasks, requesting clarification, expressing needs), up from baseline of [CURRENT %], as documented in daily logs. Additionally, Amelia will demonstrate increased confidence in communication with both familiar and unfamiliar people, improving from [BASELINE SCORE] to [TARGET SCORE] on a self-rating scale (0-10) administered weekly.</strong><br><br>
+                                    <s><strong>E4:</strong> Amelia will utilise at least two alternative methods for recording information independently.</s> <strong>[DUPLICATE - See E4 above with fuller detail]</strong><br><br>
+                                    <strong>E5:</strong> <s>Amelia will demonstrate the ability to express her emotions using an agreed strategy to trusted adults in 90% of situations (emotional independence).</s> <strong>By [DATE], when experiencing heightened emotional states, Amelia will express her emotions to a trusted adult using an agreed strategy (verbally using emotion vocabulary OR non-verbally using visual scales/emotion cards) in 90% of observed situations, up from baseline of [CURRENT %], as measured through staff observations and incident logs. The agreed strategy will be: [SPECIFY STRATEGY].</strong><br><br>
+                                    <s><strong>E6:</strong> She will be able to request support with personal care and mobility from a key adult when required (advocating for own needs).</s> <strong>[DUPLICATE - See E6 above]</strong>
                                 </div>
                             </td>
                             <td>
@@ -782,7 +782,7 @@
                             <td>
                                 <span class="aef-label label-aef-outcome">Outcomes</span>
                                 <div class="aspiration-text">
-                                    <strong>All Outcomes E1-E7</strong> are informed by comprehensive specialist assessments (Educational Psychology, Speech & Language Therapy, Occupational Therapy, Optometry, Auditory Processing) ensuring all learning, physical and mental health needs are identified and targeted.
+                                    <s><strong>All Outcomes E1-E7</strong> are informed by comprehensive specialist assessments (Educational Psychology, Speech & Language Therapy, Occupational Therapy, Optometry, Auditory Processing) ensuring all learning, physical and mental health needs are identified and targeted.</s> <strong>[NOT AN OUTCOME - This describes the assessment process, not a measurable goal for Amelia. If assessment completion is needed, make it explicit: "By [DATE], Amelia will have received comprehensive specialist assessments in [LIST: Educational Psychology, SLT, OT, further Dysgraphia assessment, Auditory Processing Disorder assessment], with all assessment recommendations implemented within [TIMEFRAME] and reviewed at termly MDT meetings." However, this is really a PROVISION/PROCESS requirement, not a student outcome.]</strong>
                                 </div>
                             </td>
                             <td>
@@ -824,8 +824,8 @@
                             <td>
                                 <span class="aef-label label-aef-outcome">Outcomes</span>
                                 <div class="aspiration-text">
-                                    <strong>E2:</strong> Amelia will be able to participate in small group activities with up to three peers who share similar interests and hobbies (neurodivergent-friendly social experiences).<br><br>
-                                    <strong>E7:</strong> Amelia will identify and utilise at least three effective strategies when sensory overload occurs (autism-informed coping strategies).
+                                    <s><strong>E2:</strong> Amelia will be able to participate in small group activities with up to three peers who share similar interests and hobbies (neurodivergent-friendly social experiences).</s> <strong>[DUPLICATE - See E2 above. Missing timeframe, frequency, and measurement method.]</strong><br><br>
+                                    <s><strong>E7:</strong> Amelia will identify and utilise at least three effective strategies when sensory overload occurs (autism-informed coping strategies).</s> <strong>[DUPLICATE - See E7 above with more detail]</strong>
                                 </div>
                             </td>
                             <td>
@@ -866,9 +866,9 @@
                             <td>
                                 <span class="aef-label label-aef-outcome">Outcomes</span>
                                 <div class="aspiration-text">
-                                    <strong>E1 (iv):</strong> Amelia will demonstrate increased confidence in her own communication skills through use of a self-rating scale (0-10) representing her feelings of communicative confidence in different contexts.<br><br>
-                                    <strong>E5:</strong> Amelia will demonstrate the ability to express her emotions using an agreed strategy (verbally or non-verbally) to trusted adults in 90% of situations where she experiences heightened emotional states.<br><br>
-                                    <strong>E7:</strong> Amelia will identify and utilise at least three effective strategies when sensory overload occurs.
+                                    <strong>E1 (iv):</strong> <s>Amelia will demonstrate increased confidence in her own communication skills through use of a self-rating scale (0-10) representing her feelings of communicative confidence in different contexts.</s> <strong>[INCONSISTENT NUMBERING - This appears to be part of E1 but is labeled separately. "Increased confidence" - from what baseline? By how much? In what timeframe? Needs: "By [DATE], Amelia will improve her self-rated communication confidence from [BASELINE SCORE] to at least [TARGET SCORE] on a 0-10 scale across [NUMBER] different contexts (e.g., with familiar adults, with peers, in group settings, when asking for help), as measured through weekly self-ratings reviewed in SLT sessions."]</strong><br><br>
+                                    <s><strong>E5:</strong> Amelia will demonstrate the ability to express her emotions using an agreed strategy (verbally or non-verbally) to trusted adults in 90% of situations where she experiences heightened emotional states.</s> <strong>[DUPLICATE - See E5 above with more detail. This version lacks baseline, measurement method, and doesn't specify what the agreed strategy is.]</strong><br><br>
+                                    <s><strong>E7:</strong> Amelia will identify and utilise at least three effective strategies when sensory overload occurs.</s> <strong>[DUPLICATE - See E7 above with more detail including baseline, measurement, and definitions]</strong>
                                 </div>
                             </td>
                             <td>
@@ -911,9 +911,9 @@
                             <td>
                                 <span class="aef-label label-aef-outcome">Outcomes</span>
                                 <div class="aspiration-text">
-                                    <strong>E3:</strong> Amelia will be meeting age related expectations in literacy and numeracy as evidenced by appropriate assessments and ongoing teacher evaluations (for Hartpury College GCSE entry requirements).<br><br>
-                                    <strong>E4:</strong> Amelia will utilise at least two alternative methods for recording information and report a positive impact on her learning experience.<br><br>
-                                    <strong>E6:</strong> Amelia will successfully transition to a full time EOTAS package, maintaining active engagement at least 80% of the time.
+                                    <s><strong>E3:</strong> Amelia will be meeting age related expectations in literacy and numeracy as evidenced by appropriate assessments and ongoing teacher evaluations (for Hartpury College GCSE entry requirements).</s> <strong>[DUPLICATE - See E3 above. This version is even vaguer - "appropriate assessments" is undefined. Needs specific assessment tools, baseline scores, target scores, and timeframes.]</strong><br><br>
+                                    <s><strong>E4:</strong> Amelia will utilise at least two alternative methods for recording information and report a positive impact on her learning experience.</s> <strong>[DUPLICATE - See E4 above. "Report a positive impact" is too subjective without a measurement scale or criteria.]</strong><br><br>
+                                    <s><strong>E6:</strong> Amelia will successfully transition to a full time EOTAS package, maintaining active engagement at least 80% of the time.</s> <strong>[DUPLICATE - See E6 above. This version lacks the important definition of "active engagement" and measurement method.]</strong>
                                 </div>
                             </td>
                             <td>
@@ -956,8 +956,8 @@
                             <td>
                                 <span class="aef-label label-aef-outcome">Outcomes</span>
                                 <div class="aspiration-text">
-                                    <strong>E1:</strong> On a daily basis, Amelia will be able to independently initiate conversations with both trusted adults and peers. Amelia will demonstrate increased confidence in her own communication skills with both familiar and unfamiliar people through the use of a self-rating scale.<br><br>
-                                    <strong>E5:</strong> Amelia will demonstrate the ability to express her emotions using an agreed strategy to trusted adults in 90% of situations.
+                                    <s><strong>E1:</strong> On a daily basis, Amelia will be able to independently initiate conversations with both trusted adults and peers. Amelia will demonstrate increased confidence in her own communication skills with both familiar and unfamiliar people through the use of a self-rating scale.</s> <strong>[DUPLICATE - See E1 above. This version combines multiple elements but lacks: frequency targets ("on a daily basis" - how many times?), baseline data, target confidence scores, timeframes, and measurement methods beyond "self-rating scale" (which scale? when administered?). Also unclear how "with peers" will be measured separately from "with adults".]</strong><br><br>
+                                    <s><strong>E5:</strong> Amelia will demonstrate the ability to express her emotions using an agreed strategy to trusted adults in 90% of situations.</s> <strong>[DUPLICATE - See E5 above. Missing: what situations are being counted? What is the agreed strategy? What's the baseline? How is this measured and by whom?]</strong>
                                 </div>
                             </td>
                             <td>
