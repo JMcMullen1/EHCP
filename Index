@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0049)file:///C:/Users/jamie/Downloads/Amelia-EHCP.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EHCP Golden Threads Overview</title>
     <style>
@@ -440,7 +440,7 @@
                 <!-- Aspiration 1 -->
                 <div class="aspiration-table">
                     <table>
-                        <tr>
+                        <tbody><tr>
                             <th style="width: 33%;">Aspiration (A)</th>
                             <th style="width: 33%;">Outcomes (E)</th>
                             <th style="width: 34%;">Provision (F)</th>
@@ -449,7 +449,7 @@
                             <td>
                                 <span class="aef-label label-aspiration">Aspiration</span>
                                 <div class="aspiration-text">
-                                    <strong>Academic & Educational Goals</strong><br><br>
+                                    <strong>Academic &amp; Educational Goals</strong><br><br>
                                     📚 I want to study things that interest me and be able to do the GCSE exams I'm capable of.<br><br>
                                     🏫 I want to be in a learning environment that will not overwhelm me, takes into account the way I need to learn and does not rush me or cause me anxiety.
                                 </div>
@@ -476,13 +476,13 @@
                                 </div>
                             </td>
                         </tr>
-                    </table>
+                    </tbody></table>
                 </div>
 
                 <!-- Aspiration 2 -->
                 <div class="aspiration-table">
                     <table>
-                        <tr>
+                        <tbody><tr>
                             <th style="width: 33%;">Aspiration (A)</th>
                             <th style="width: 33%;">Outcomes (E)</th>
                             <th style="width: 34%;">Provision (F)</th>
@@ -491,7 +491,7 @@
                             <td>
                                 <span class="aef-label label-aspiration">Aspiration</span>
                                 <div class="aspiration-text">
-                                    <strong>Career Goals – Veterinary Medicine & Bionics</strong><br><br>
+                                    <strong>Career Goals – Veterinary Medicine &amp; Bionics</strong><br><br>
                                     🐾 I would love a job working with animals but not talking to people. I would prefer to work on my own and use my problem-solving skills in some way.<br><br>
                                     🔧 I have an interest in engineering as I am a good problem-solver, so vet bionics interests me.<br><br>
                                     🎓 My current aspiration is to go to Hartpury College to study the Sciences for higher education in veterinary medicine (specialising in bionics).
@@ -517,13 +517,13 @@
                                 </div>
                             </td>
                         </tr>
-                    </table>
+                    </tbody></table>
                 </div>
 
                 <!-- Aspiration 3 -->
                 <div class="aspiration-table">
                     <table>
-                        <tr>
+                        <tbody><tr>
                             <th style="width: 33%;">Aspiration (A)</th>
                             <th style="width: 33%;">Outcomes (E)</th>
                             <th style="width: 34%;">Provision (F)</th>
@@ -555,13 +555,13 @@
                                 </div>
                             </td>
                         </tr>
-                    </table>
+                    </tbody></table>
                 </div>
 
                 <!-- Aspiration 4 -->
                 <div class="aspiration-table">
                     <table>
-                        <tr>
+                        <tbody><tr>
                             <th style="width: 33%;">Aspiration (A)</th>
                             <th style="width: 33%;">Outcomes (E)</th>
                             <th style="width: 34%;">Provision (F)</th>
@@ -570,7 +570,7 @@
                             <td>
                                 <span class="aef-label label-aspiration">Aspiration</span>
                                 <div class="aspiration-text">
-                                    <strong>Physical Health & Fitness</strong><br><br>
+                                    <strong>Physical Health &amp; Fitness</strong><br><br>
                                     💪 I would like to regain my fitness level by exercising in a way I can cope with, so I hopefully do not go back into a wheelchair the next time I have a relapse in my CRPS.
                                 </div>
                             </td>
@@ -594,13 +594,13 @@
                                 </div>
                             </td>
                         </tr>
-                    </table>
+                    </tbody></table>
                 </div>
 
                 <!-- Aspiration 5 -->
                 <div class="aspiration-table">
                     <table>
-                        <tr>
+                        <tbody><tr>
                             <th style="width: 33%;">Aspiration (A)</th>
                             <th style="width: 33%;">Outcomes (E)</th>
                             <th style="width: 34%;">Provision (F)</th>
@@ -633,13 +633,13 @@
                                 </div>
                             </td>
                         </tr>
-                    </table>
+                    </tbody></table>
                 </div>
 
                 <!-- Aspiration 6 -->
                 <div class="aspiration-table">
                     <table>
-                        <tr>
+                        <tbody><tr>
                             <th style="width: 33%;">Aspiration (A)</th>
                             <th style="width: 33%;">Outcomes (E)</th>
                             <th style="width: 34%;">Provision (F)</th>
@@ -648,7 +648,7 @@
                             <td>
                                 <span class="aef-label label-aspiration">Aspiration</span>
                                 <div class="aspiration-text">
-                                    <strong>Animal Welfare & Volunteering</strong><br><br>
+                                    <strong>Animal Welfare &amp; Volunteering</strong><br><br>
                                     💚 I adore animals and have raised money for animal charities. I currently volunteer at Cheltenham Animal Shelter.<br><br>
                                     🐕 I have worked hard to train my own service dog. She helps me to walk up and down stairs and to stay mobile when I am having a CRPS relapse.
                                 </div>
@@ -673,7 +673,7 @@
                                 </div>
                             </td>
                         </tr>
-                    </table>
+                    </tbody></table>
                 </div>
             </div>
 
@@ -684,7 +684,7 @@
                 <!-- Parent Aspiration 1 -->
                 <div class="aspiration-table">
                     <table>
-                        <tr>
+                        <tbody><tr>
                             <th style="width: 33%;">Aspiration (A)</th>
                             <th style="width: 33%;">Outcomes (E)</th>
                             <th style="width: 34%;">Provision (F)</th>
@@ -693,7 +693,7 @@
                             <td>
                                 <span class="aef-label label-aspiration">Aspiration</span>
                                 <div class="aspiration-text">
-                                    <strong>Overall Wellbeing & Happiness</strong><br><br>
+                                    <strong>Overall Wellbeing &amp; Happiness</strong><br><br>
                                     😊 Mr and Mrs Lockwood want me to be happy, healthy and to lead a full and enriching life with no limitations and every opportunity given to reach my potential.
                                 </div>
                             </td>
@@ -716,13 +716,13 @@
                                 </div>
                             </td>
                         </tr>
-                    </table>
+                    </tbody></table>
                 </div>
 
                 <!-- Parent Aspiration 2 -->
                 <div class="aspiration-table">
                     <table>
-                        <tr>
+                        <tbody><tr>
                             <th style="width: 33%;">Aspiration (A)</th>
                             <th style="width: 33%;">Outcomes (E)</th>
                             <th style="width: 34%;">Provision (F)</th>
@@ -731,7 +731,7 @@
                             <td>
                                 <span class="aef-label label-aspiration">Aspiration</span>
                                 <div class="aspiration-text">
-                                    <strong>Independence & Autonomy</strong><br><br>
+                                    <strong>Independence &amp; Autonomy</strong><br><br>
                                     🚀 They would like me to have greater independence and access to things without being totally reliant on another person.<br><br>
                                     🌱 They want me to grow into my pre-teen years and gain the independence and exposure to a lifestyle that meets my profile.
                                 </div>
@@ -759,13 +759,13 @@
                                 </div>
                             </td>
                         </tr>
-                    </table>
+                    </tbody></table>
                 </div>
 
                 <!-- Parent Aspiration 3 -->
                 <div class="aspiration-table">
                     <table>
-                        <tr>
+                        <tbody><tr>
                             <th style="width: 33%;">Aspiration (A)</th>
                             <th style="width: 33%;">Outcomes (E)</th>
                             <th style="width: 34%;">Provision (F)</th>
@@ -774,21 +774,21 @@
                             <td>
                                 <span class="aef-label label-aspiration">Aspiration</span>
                                 <div class="aspiration-text">
-                                    <strong>Comprehensive Assessment & Support</strong><br><br>
+                                    <strong>Comprehensive Assessment &amp; Support</strong><br><br>
                                     🏥 They would like all of my learning, physical and mental health needs to have been assessed, diagnosed and the right support put in place.
                                 </div>
                             </td>
                             <td>
                                 <span class="aef-label label-aef-outcome">Outcomes</span>
                                 <div class="aspiration-text">
-                                    <s><strong>All Outcomes E1-E7</strong> are informed by comprehensive specialist assessments (Educational Psychology, Speech & Language Therapy, Occupational Therapy, Optometry, Auditory Processing) ensuring all learning, physical and mental health needs are identified and targeted.</s> <strong>[NOT AN OUTCOME - This describes the assessment process, not a measurable goal for Amelia. If assessment completion is needed, make it explicit: "By [DATE], Amelia will have received comprehensive specialist assessments in [LIST: Educational Psychology, SLT, OT, further Dysgraphia assessment, Auditory Processing Disorder assessment], with all assessment recommendations implemented within [TIMEFRAME] and reviewed at termly MDT meetings." However, this is really a PROVISION/PROCESS requirement, not a student outcome.]</strong>
+                                    <s><strong>All Outcomes E1-E7</strong> are informed by comprehensive specialist assessments (Educational Psychology, Speech &amp; Language Therapy, Occupational Therapy, Optometry, Auditory Processing) ensuring all learning, physical and mental health needs are identified and targeted.</s> <strong>[NOT AN OUTCOME - This describes the assessment process, not a measurable goal for Amelia. If assessment completion is needed, make it explicit: "By [DATE], Amelia will have received comprehensive specialist assessments in [LIST: Educational Psychology, SLT, OT, further Dysgraphia assessment, Auditory Processing Disorder assessment], with all assessment recommendations implemented within [TIMEFRAME] and reviewed at termly MDT meetings." However, this is really a PROVISION/PROCESS requirement, not a student outcome.]</strong>
                                 </div>
                             </td>
                             <td>
                                 <span class="aef-label label-aef-provision">Provision</span>
                                 <div class="aspiration-text">
                                     • <strong>Specialist multidisciplinary team:</strong><br>
-                                    &nbsp;&nbsp;- Speech & Language Therapist: 27 hrs/year (12 direct, 15 indirect)<br>
+                                    &nbsp;&nbsp;- Speech &amp; Language Therapist: 27 hrs/year (12 direct, 15 indirect)<br>
                                     &nbsp;&nbsp;- Occupational Therapist: 60 mins/week direct therapy<br>
                                     &nbsp;&nbsp;- Physiotherapist: daily home programme + monthly community physio<br>
                                     &nbsp;&nbsp;- Psychotherapy/psychological therapy: 1 hr/week<br>
@@ -801,13 +801,13 @@
                                 </div>
                             </td>
                         </tr>
-                    </table>
+                    </tbody></table>
                 </div>
 
                 <!-- Parent Aspiration 4 -->
                 <div class="aspiration-table">
                     <table>
-                        <tr>
+                        <tbody><tr>
                             <th style="width: 33%;">Aspiration (A)</th>
                             <th style="width: 33%;">Outcomes (E)</th>
                             <th style="width: 34%;">Provision (F)</th>
@@ -842,13 +842,13 @@
                                 </div>
                             </td>
                         </tr>
-                    </table>
+                    </tbody></table>
                 </div>
 
                 <!-- Parent Aspiration 5 -->
                 <div class="aspiration-table">
                     <table>
-                        <tr>
+                        <tbody><tr>
                             <th style="width: 33%;">Aspiration (A)</th>
                             <th style="width: 33%;">Outcomes (E)</th>
                             <th style="width: 34%;">Provision (F)</th>
@@ -857,7 +857,7 @@
                             <td>
                                 <span class="aef-label label-aspiration">Aspiration</span>
                                 <div class="aspiration-text">
-                                    <strong>Mental Health & Trauma Support</strong><br><br>
+                                    <strong>Mental Health &amp; Trauma Support</strong><br><br>
                                     💪 They want to see me supported to manage my stress and anxiety, with professional input to help me deal with past and present trauma so I can develop trust, social setting tolerance and self-love.<br><br>
                                     🧠 They want me to be able to access the right type of therapy for my mental health that works for me.
                                 </div>
@@ -887,13 +887,13 @@
                                 </div>
                             </td>
                         </tr>
-                    </table>
+                    </tbody></table>
                 </div>
 
                 <!-- Parent Aspiration 6 -->
                 <div class="aspiration-table">
                     <table>
-                        <tr>
+                        <tbody><tr>
                             <th style="width: 33%;">Aspiration (A)</th>
                             <th style="width: 33%;">Outcomes (E)</th>
                             <th style="width: 34%;">Provision (F)</th>
@@ -932,13 +932,13 @@
                                 </div>
                             </td>
                         </tr>
-                    </table>
+                    </tbody></table>
                 </div>
 
                 <!-- Parent Aspiration 7 -->
                 <div class="aspiration-table">
                     <table>
-                        <tr>
+                        <tbody><tr>
                             <th style="width: 33%;">Aspiration (A)</th>
                             <th style="width: 33%;">Outcomes (E)</th>
                             <th style="width: 34%;">Provision (F)</th>
@@ -975,7 +975,7 @@
                                 </div>
                             </td>
                         </tr>
-                    </table>
+                    </tbody></table>
                 </div>
             </div>
         </div>
@@ -995,14 +995,7 @@
                             <span class="label label-outcome">Outcomes</span>
                             <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses supporting Amelia's learning progress while managing the impact of CRPS, Autism, and ADHD, with specific measurable indicators of academic progress despite these barriers.</em></strong></div>
                             <span class="label label-provision">Provision</span>
-                            <div class="provision-text"><strong>EOTIS Package:</strong><br>
-Amelia will be educated otherwise than in school and receive a package of 'EOTIS' provision, which will include a combination of academic teaching and therapeutic provision.<br><br>
-<strong>Oversight of EOTIS Package:</strong><br>
-There will be a named and designated EOTIS coordinator who has knowledge and experience of working with children who are neurodiverse. They will require 5 hours weekly initially in the first 2 months to coordinate, implement and monitor Amelia's EOTIS package. Thereafter, the coordinator will only require 2 hours weekly.<br><br>
-Her EOTIS package will be reviewed and updated at half-termly review meetings, lasting approximately 1 hour, with all members of the multi-disciplinary team. Those who will attend the half-termly meetings will be Amelia's teaching team, treating therapists including SLT and OT, and the EOTIS-package coordinator. Amelia and her parents will be invited to attend those meetings.<br><br>
-<strong>Personalised Curriculum:</strong><br>
-A personalised and individualised curriculum that is tailored to her strengths and needs. Amelia requires her learning to be presented in extra short chunks (maximum 30 minutes) followed by access to a preferred task (such as crocheting) for a short period.<br><br>
-Amelia should be involved in planning her education and given choice about how and when her teaching is delivered.</div>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
                         <div class="need-block">
                             <span class="label label-need">NEED 2</span>
@@ -1010,9 +1003,7 @@ Amelia should be involved in planning her education and given choice about how a
                             <span class="label label-outcome">Outcomes</span>
                             <div class="outcome-text"><strong>E3:</strong> <del>Amelia will be meeting age related expectations in literacy (specifically spelling, punctuation and grammar) and numeracy as evidenced by appropriate assessments and ongoing teacher evaluations.</del><br><br><strong><em>SMART Revision: By [end of academic year/specific date], Amelia will improve her spelling accuracy from [baseline X%] to [target Y%] on age-appropriate curriculum spelling tests, demonstrate correct use of punctuation and grammar in 7 out of 10 writing samples as measured by [specific rubric], and achieve a standardized score of [target score] on the [named numeracy assessment e.g., GL Assessment Mathematics Progress Test], representing progress appropriate to her learning profile with Dyslexia. Progress will be reviewed termly through specified assessments and teacher work sampling.</em></strong><br><br><em>Note: This outcome is weak and vague. It lacks specificity in several ways: (1) "Age-related expectations" is undefined and difficult to measure; (2) It combines multiple distinct skills (spelling, punctuation, grammar, numeracy) without separate baselines or targets; (3) "Appropriate assessments" is not specified; (4) There is no timeframe or baseline for measuring progress; (5) It does not acknowledge Amelia's Dyslexia and the need for differentiated expectations. This outcome should be redesigned to include: specific baseline scores, targeted improvement goals for each skill area separately, named standardized assessments, clear timeframes, and realistic expectations given Amelia's learning profile.</em></div>
                             <span class="label label-provision">Provision</span>
-                            <div class="provision-text"><strong>English Tuition:</strong><br>
-5 hours per week of 1:1 English tuition delivered by qualified and experienced teachers (ideally with experience of neurodiversity) trained in ASD and ADHD, who understand Amelia's complex profile.<br><br>
-All work tasks should be broken down into short chunks with visual prompts and support.</div>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
                         <div class="need-block">
                             <span class="label label-need">NEED 3</span>
@@ -1020,11 +1011,7 @@ All work tasks should be broken down into short chunks with visual prompts and s
                             <span class="label label-outcome">Outcomes</span>
                             <div class="outcome-text"><strong>E4:</strong> <del>Amelia will utilise at least two alternative methods for recording information in academic settings, such as speech-to-text software or word processors and report a positive impact on her learning experience.</del><br><br><strong><em>SMART Revision: By [end of term/specific date], Amelia will independently use at least two alternative recording methods (e.g., speech-to-text software and word processor) for 80% of written assignments requiring more than [X words/paragraphs]. Impact will be measured objectively by: (1) completion rate of written assignments increasing from [baseline %] to [target %], (2) word count increasing from average [X words] to [Y words] per assignment, (3) self-reported fatigue levels during writing tasks reducing from [baseline score] to [target score] on a 1-10 scale, and (4) work quality maintained or improved as evidenced by teacher assessment rubrics. Independence level will be tracked from initial adult support to independent initiation and use.</em></strong><br><br><em>Note: This outcome is weak as: (1) "Report a positive impact" is subjective and poorly defined; (2) It lacks baseline data on current usage; (3) There is no timeframe or measurement of "utilise" (frequency, independence level); (4) The outcome doesn't specify how impact will be measured objectively. This should be redesigned to include: specific frequency of use (e.g., 80% of written assignments), measures of independence, objective metrics of impact such as completion rates, quality of work produced, or reduced fatigue levels, and clear timeframes.</em></div>
                             <span class="label label-provision">Provision</span>
-                            <div class="provision-text"><strong>Assistive Technology:</strong><br>
-A laptop capable of running appropriate software speech to text software for recording work e.g. Dragon - Dragon Naturally Speaking or Professional STT software.<br><br>
-<strong>Learning Structure:</strong><br>
-Learning to be presented in extra short chunks (maximum 30 minutes) followed by access to a preferred task (such as crocheting) for a short period.<br><br>
-All work tasks should be broken down into short chunks with visual prompts and support.</div>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
                         <div class="need-block">
                             <span class="label label-need">NEED 4</span>
@@ -1032,12 +1019,7 @@ All work tasks should be broken down into short chunks with visual prompts and s
                             <span class="label label-outcome">Outcomes</span>
                             <div class="outcome-text"><strong><em>No relevant outcome matched to this need. While E3 and E4 partially relate, a specific outcome is needed that addresses reducing the impact of handwriting and word-copying difficulties through accommodations and/or interventions, with measurable indicators of improved access to the curriculum.</em></strong></div>
                             <span class="label label-provision">Provision</span>
-                            <div class="provision-text"><strong>Equipment to Support Handwriting Difficulties:</strong><br>
-• A graphics tablet and stylus to enable her to use a stylus to show mathematical and scientific drawings so that her online teachers can see her recording in real time<br>
-• Speech to text software for recording work e.g. Dragon - Dragon Naturally Speaking or Professional STT software<br>
-• Scan/Reader Pen – to help with reading, dictation<br>
-• Printer and ink<br><br>
-All work tasks should be broken down into short chunks with visual prompts and support.</div>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
                         <div class="need-block">
                             <span class="label label-need">NEED 5</span>
@@ -1045,9 +1027,7 @@ All work tasks should be broken down into short chunks with visual prompts and s
                             <span class="label label-outcome">Outcomes</span>
                             <div class="outcome-text"><strong><em>No relevant outcome matched to this need. While E4 partially addresses alternative recording methods, a specific outcome is needed that measures reduction in frustration and improved ability to express ideas through supported writing methods, with comparison to verbal expression capabilities.</em></strong></div>
                             <span class="label label-provision">Provision</span>
-                            <div class="provision-text"><strong>Tools to Support Expression:</strong><br>
-• Speech to text software for recording work e.g. Dragon - Dragon Naturally Speaking or Professional STT software to enable Amelia to express her ideas verbally and have them captured in writing<br>
-• A graphics tablet and stylus to enable her to use a stylus to show mathematical and scientific drawings so that her online teachers can see her recording in real time</div>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
                         <div class="need-block">
                             <span class="label label-need">NEED 6</span>
@@ -1055,11 +1035,7 @@ All work tasks should be broken down into short chunks with visual prompts and s
                             <span class="label label-outcome">Outcomes</span>
                             <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses improving executive functioning skills (planning, organization, focus) and managing ADHD-related difficulties to increase readiness to learn, with measurable indicators such as task completion rates, use of organizational strategies, or engagement in learning activities.</em></strong></div>
                             <span class="label label-provision">Provision</span>
-                            <div class="provision-text"><strong>ADHD Support Strategies:</strong><br>
-• Learning to be presented in extra short chunks (maximum 30 minutes) followed by access to a preferred task (such as crocheting) for a short period<br>
-• 2 hours Physical Education per week (in the form of Amelia's interests and following GOSH guidance) to help manage hyperactive energy build-up<br>
-• Amelia should be involved in planning her education and given choice about how and when her teaching is delivered to support executive functioning and engagement<br>
-• Qualified teachers trained in ASD and ADHD who understand Amelia's complex profile</div>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
                         <div class="need-block">
                             <span class="label label-need">NEED 7</span>
@@ -1067,21 +1043,7 @@ All work tasks should be broken down into short chunks with visual prompts and s
                             <span class="label label-outcome">Outcomes</span>
                             <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that specifically addresses closing identified learning gaps with baseline assessments, targeted skills/knowledge areas, and measurable progress indicators over time.</em></strong></div>
                             <span class="label label-provision">Provision</span>
-                            <div class="provision-text"><strong>Learning and Tuition:</strong><br>
-25 hours per week 1:1 tuition to provide Amelia with access to a suitable fulltime education in order to meet her education, social and emotional needs.<br><br>
-<strong>Tuition will include:</strong><br>
-• English (5 hours), Maths (5 hours), Science (6 hours) (separated into Chemistry, Biology and Physics)<br>
-• Spanish (2 hours), Computer Science (2 hours), Business studies (1 hour)<br>
-• 2 hours Physical Education (in the form of Amelia's interests and following GOSH guidance)<br>
-• 2 hours Music – drumming and singing lessons<br>
-• Planned educational excursions – 3 per year (one per term). Tutor or LSA to take Amelia on places of interest in line with curriculum such as museums, lectures or education festivals. 18hrs per year based on 6 hrs per trip at tutor rate. Plus additional trip costs.<br>
-• Therapeutic input 3 hours per week (see SEMH section)<br><br>
-<strong>Total provision: 28 hours per week</strong><br><br>
-The EOTIS package will be split over the entire year (44 weeks learning) (8 weeks break) but weekly hours will only be calculated across 39 weeks total.<br><br>
-<strong>Continued relationships with current tutors</strong> to provide consistency and build on existing rapport.<br><br>
-<strong>Personalised curriculum:</strong> A personalised and individualised curriculum that is tailored to her strengths and needs. Amelia to be provided an annual budget for science equipment for practical experiments. Amelia's public/national exam entry fees will be provided.<br><br>
-<strong>Location:</strong> When Amelia's physical needs allow, the 25 hours tuition should be delivered in a mixture of settings in and out of the home, to include libraries and museums.<br><br>
-Lessons should be delivered by qualified and experienced teachers (ideally with experience of neurodiversity) trained in ASD and ADHD, who understand Amelia's complex profile.</div>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
                         <div class="need-block">
                             <span class="label label-need">NEED 8</span>
@@ -1089,11 +1051,7 @@ Lessons should be delivered by qualified and experienced teachers (ideally with 
                             <span class="label label-outcome">Outcomes</span>
                             <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses providing appropriate visual presentation of materials (reduced visual clutter, appropriate spacing, clear backgrounds) and measuring Amelia's improved ability to access and process visual information in learning materials.</em></strong></div>
                             <span class="label label-provision">Provision</span>
-                            <div class="provision-text"><strong>Visual Support Equipment:</strong><br>
-• A minimum 24" curved monitor to support visual access to materials<br>
-• Scan/Reader Pen – to help with reading<br><br>
-<strong>Presentation of Materials:</strong><br>
-All work tasks should be broken down into short chunks with visual prompts and support. Materials should be presented with reduced visual clutter, avoiding dense text, coloured background pictures, and multiple items per page.</div>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
                         <div class="need-block">
                             <span class="label label-need">NEED 9</span>
@@ -1101,13 +1059,7 @@ All work tasks should be broken down into short chunks with visual prompts and s
                             <span class="label label-outcome">Outcomes</span>
                             <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses Amelia's ability to interpret visual learning tools (graphs, pie charts, mind maps) when presented appropriately (single item per page, clear backgrounds, adequate spacing), with measurable indicators of comprehension.</em></strong></div>
                             <span class="label label-provision">Provision</span>
-                            <div class="provision-text"><strong>Presentation of Visual Learning Tools:</strong><br>
-Visual learning tools such as pie charts, graphs, and mind maps should be presented with:<br>
-• Single item per page only<br>
-• No disturbing or coloured backgrounds<br>
-• Plenty of space on the page<br>
-• Clear, uncluttered layout<br><br>
-A minimum 24" curved monitor to provide adequate screen space for visual materials.</div>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
                     </div>
                 </div>
@@ -1587,5 +1539,6 @@ A minimum 24" curved monitor to provide adequate screen space for visual materia
             </div>
         </div>
     </div>
-</body>
-</html>
+
+
+</body></html>
