@@ -323,8 +323,7 @@
             border-radius: 6px;
             margin-bottom: 10px;
             border: 1px solid #e5e7eb;
-            color: #9ca3af;
-            font-style: italic;
+            color: #000000;
             transition: all 0.3s ease;
         }
 
@@ -984,10 +983,7 @@
         <!-- The Golden Thread (BEF) -->
         <div class="golden-thread-container">
             <h2 class="golden-thread-title">Section BEF – The Golden Thread</h2>
-            <p style="text-align: center; margin-bottom: 20px; color: #7c2d12; font-weight: 600;">
-                All Section B needs populated below - scroll within each column to see all needs
-            </p>
-            
+
             <div class="golden-thread-grid">
                 <!-- Column 1: Cognition and Learning -->
                 <div class="column">
@@ -1254,9 +1250,6 @@
                 <div class="column">
                     <div class="column-header">Sensory / Physical</div>
                     <div class="column-content">
-                        <p style="background: #fff3cd; padding: 10px; border-radius: 5px; margin-bottom: 15px; font-size: 0.9em;">
-                            <strong>Note:</strong> 26 needs total (19 Sensory Processing + 7 Motor Skills). Scroll to see all.
-                        </p>
                         <div class="need-block">
                             <span class="label label-need">NEED SENSORY 1</span>
                             <div class="need-text">Amelia presents with sensory processing and regulation difficulties impacting on her ability to attend and concentrate for learning, emotional, regulation and her independence skills and social interaction.</div>
