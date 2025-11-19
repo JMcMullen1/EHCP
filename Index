@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EHCP Golden Threads Overview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 2em;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .subsection-title {
+            font-size: 1.5em;
+            font-weight: 600;
+            color: #34495e;
+            margin: 40px 0 25px 0;
+            text-align: center;
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: -1000px 0;
+            }
+            100% {
+                background-position: 1000px 0;
+            }
+        }
+
+        @keyframes goldPulse {
+            0%, 100% {
+                box-shadow: 0 6px 20px rgba(218, 165, 32, 0.3);
+            }
+            50% {
+                box-shadow: 0 8px 30px rgba(218, 165, 32, 0.5);
+            }
+        }
+
+        /* AEF Section Styling */
+        .aef-section {
+            background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%);
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 50px;
+            box-shadow: 0 8px 30px rgba(59, 130, 246, 0.3);
+        }
+
+        .aef-title {
+            font-size: 2.5em;
+            font-weight: 800;
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #1d4ed8 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-align: center;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: shimmer 3s linear infinite;
+        }
+
+        .aspiration-category {
+            margin-bottom: 40px;
+        }
+
+        .category-header {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #1e40af;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: linear-gradient(135deg, #bfdbfe 0%, #dbeafe 100%);
+            border-radius: 10px;
+            border-left: 5px solid #3b82f6;
+        }
+
+        .aspiration-table {
+            width: 100%;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            margin-bottom: 25px;
+            animation: fadeIn 0.6s ease-out;
+            transition: all 0.3s ease;
+        }
+
+        .aspiration-table:hover {
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+            transform: translateY(-2px);
+        }
+
+        .aspiration-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .aspiration-table th {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #1d4ed8 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .aspiration-table td {
+            padding: 15px;
+            border-bottom: 1px solid #e5e7eb;
+            vertical-align: top;
+        }
+
+        .aspiration-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .aspiration-table tr:hover {
+            background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+        }
+
+        .aspiration-text {
+            font-size: 1em;
+            color: #374151;
+            line-height: 1.6;
+        }
+
+        .placeholder-text {
+            color: #9ca3af;
+            font-style: italic;
+        }
+
+        .aef-label {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .label-aspiration {
+            background: linear-gradient(135deg, #bfdbfe 0%, #93c5fd 100%);
+            color: #1e40af;
+        }
+
+        .label-aef-outcome {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            color: #065f46;
+        }
+
+        .label-aef-provision {
+            background: linear-gradient(135deg, #fed7aa 0%, #fdba74 100%);
+            color: #9a3412;
+        }
+
+        /* Golden Thread Section */
+        .golden-thread-container {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 50%, #fef3c7 100%);
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 50px;
+            box-shadow: 0 8px 30px rgba(218, 165, 32, 0.3);
+            animation: goldPulse 3s ease-in-out infinite;
+        }
+
+        .golden-thread-title {
+            font-size: 2.5em;
+            font-weight: 800;
+            background: linear-gradient(135deg, #d4af37 0%, #f4d03f 25%, #ffd700 50%, #f4d03f 75%, #d4af37 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-align: center;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: shimmer 3s linear infinite;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .golden-thread-grid {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 0;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            flex: 1;
+            min-width: 280px;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .column:nth-child(1) { animation-delay: 0.1s; }
+        .column:nth-child(2) { animation-delay: 0.2s; }
+        .column:nth-child(3) { animation-delay: 0.3s; }
+        .column:nth-child(4) { animation-delay: 0.4s; }
+
+        .column-header {
+            background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+            color: #7c2d12;
+            padding: 15px;
+            border-radius: 10px 10px 0 0;
+            font-size: 1.2em;
+            font-weight: 700;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .column-header:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(212, 175, 55, 0.4);
+        }
+
+        .column-content {
+            background: white;
+            border-radius: 0 0 10px 10px;
+            padding: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .need-block {
+            background: linear-gradient(135deg, #fefefe 0%, #fafbfc 100%);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-left: 4px solid #d4af37;
+            transition: all 0.3s ease;
+        }
+
+        .need-block:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.2);
+        }
+
+        .label {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: transform 0.2s ease;
+        }
+
+        .label:hover {
+            transform: scale(1.05);
+        }
+
+        .label-need {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            color: #1e40af;
+            box-shadow: 0 2px 8px rgba(30, 64, 175, 0.2);
+        }
+
+        .label-outcome {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            color: #065f46;
+            box-shadow: 0 2px 8px rgba(6, 95, 70, 0.2);
+        }
+
+        .label-provision {
+            background: linear-gradient(135deg, #fed7aa 0%, #fdba74 100%);
+            color: #9a3412;
+            box-shadow: 0 2px 8px rgba(154, 52, 18, 0.2);
+        }
+
+        .need-text, .outcome-text, .provision-text {
+            background: white;
+            padding: 12px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            border: 1px solid #e5e7eb;
+            color: #9ca3af;
+            font-style: italic;
+            transition: all 0.3s ease;
+        }
+
+        .need-text:hover, .outcome-text:hover, .provision-text:hover {
+            background: #f9fafb;
+            border-color: #d1d5db;
+        }
+
+        /* Health Care and Social Care Sections */
+        .health-care-section {
+            background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+
+        .social-care-section {
+            background: linear-gradient(135deg, #fce7f3 0%, #fef1f7 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+
+        .two-col-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        .two-col-grid:hover {
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+            transform: translateY(-2px);
+        }
+
+        .col-header {
+            font-weight: 600;
+            color: #2c3e50;
+            padding: 10px;
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+            border-radius: 6px;
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .col-header:hover {
+            background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
+        }
+
+        .col-content {
+            padding: 15px;
+            background: #fafbfc;
+            border-radius: 6px;
+            color: #9ca3af;
+            font-style: italic;
+            min-height: 80px;
+            transition: all 0.3s ease;
+        }
+
+        .col-content:hover {
+            background: #f3f4f6;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .golden-thread-grid {
+                flex-direction: column;
+            }
+
+            .two-col-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .section-title {
+                font-size: 1.5em;
+            }
+
+            .subsection-title {
+                font-size: 1.2em;
+            }
+
+            .golden-thread-container, .aef-section {
+                padding: 20px;
+            }
+
+            .golden-thread-title, .aef-title {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Section AEF: Aspirations -->
+        <div class="aef-section">
+            <h1 class="aef-title">Section AEF – Aspirations</h1>
+            
+            <!-- Young Person's Aspirations -->
+            <div class="aspiration-category">
+                <div class="category-header">🌟 Young Person's Aspirations</div>
+                
+                <!-- Aspiration 1 -->
+                <div class="aspiration-table">
+                    <table>
+                        <tr>
+                            <th style="width: 33%;">Aspiration (A)</th>
+                            <th style="width: 33%;">Outcomes (E)</th>
+                            <th style="width: 34%;">Provision (F)</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="aef-label label-aspiration">Aspiration</span>
+                                <div class="aspiration-text">
+                                    <strong>Academic & Educational Goals</strong><br><br>
+                                    📚 I want to study things that interest me and be able to do the GCSE exams I'm capable of.<br><br>
+                                    🏫 I want to be in a learning environment that will not overwhelm me, takes into account the way I need to learn and does not rush me or cause me anxiety.
+                                </div>
+                            </td>
+                            <td>
+                                <span class="aef-label label-aef-outcome">Outcomes</span>
+                                <div class="aspiration-text">
+                                    <strong>E3:</strong> Amelia will be meeting age related expectations in literacy (specifically spelling, punctuation and grammar) and numeracy as evidenced by appropriate assessments and ongoing teacher evaluations.<br><br>
+                                    <strong>E4:</strong> Amelia will utilise at least two alternative methods for recording information in academic settings, such as speech-to-text software or word processors and report a positive impact on her learning experience.<br><br>
+                                    <strong>E6:</strong> Amelia will successfully transition to a full time EOTAS package, maintaining active engagement in her educational activities at least 80% of the time, whether attending in-person or through alternative educational provisions.
+                                </div>
+                            </td>
+                            <td>
+                                <span class="aef-label label-aef-provision">Provision</span>
+                                <div class="aspiration-text">
+                                    • Customised curriculum leveraging strengths (especially science) while accommodating learning challenges<br>
+                                    • 28 hours per week total tuition: English (5 hrs), Maths (5 hrs), Science (6 hrs - Chemistry, Biology, Physics), Spanish (2 hrs), Computer Science (2 hrs), Business studies (1 hr), PE (2 hrs), Music (2 hrs)<br>
+                                    • 3 planned educational excursions per year (museums, lectures, education festivals)<br>
+                                    • Dyslexia-friendly learning environment and strategies<br>
+                                    • Alternative recording methods: speech-to-text (Dragon), word processors, graphic organisers<br>
+                                    • Equipment: laptop, graphics tablet with stylus, 24" curved monitor, scan/reader pen, printer<br>
+                                    • SMART goals reviewed half-termly by EOTAS coordinator<br>
+                                    • Flexible curriculum tailored to fluctuating wellbeing
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Aspiration 2 -->
+                <div class="aspiration-table">
+                    <table>
+                        <tr>
+                            <th style="width: 33%;">Aspiration (A)</th>
+                            <th style="width: 33%;">Outcomes (E)</th>
+                            <th style="width: 34%;">Provision (F)</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="aef-label label-aspiration">Aspiration</span>
+                                <div class="aspiration-text">
+                                    <strong>Career Goals – Veterinary Medicine & Bionics</strong><br><br>
+                                    🐾 I would love a job working with animals but not talking to people. I would prefer to work on my own and use my problem-solving skills in some way.<br><br>
+                                    🔧 I have an interest in engineering as I am a good problem-solver, so vet bionics interests me.<br><br>
+                                    🎓 My current aspiration is to go to Hartpury College to study the Sciences for higher education in veterinary medicine (specialising in bionics).
+                                </div>
+                            </td>
+                            <td>
+                                <span class="aef-label label-aef-outcome">Outcomes</span>
+                                <div class="aspiration-text">
+                                    <strong>E3:</strong> Amelia will be meeting age related expectations in literacy (specifically spelling, punctuation and grammar) and numeracy as evidenced by appropriate assessments and ongoing teacher evaluations (essential for GCSE preparation and Hartpury College entry).<br><br>
+                                    <strong>E6:</strong> Amelia will successfully transition to a full time EOTAS package, maintaining active engagement in her educational activities at least 80% of the time, to build the academic foundation needed for veterinary medicine.
+                                </div>
+                            </td>
+                            <td>
+                                <span class="aef-label label-aef-provision">Provision</span>
+                                <div class="aspiration-text">
+                                    • <strong>Advanced Science modules:</strong> 6 hours per week of Science tuition separated into Chemistry, Biology and Physics - delivered by experienced teachers with neurodiversity experience<br>
+                                    • Priority support for GCSE subjects needed for Hartpury College entry<br>
+                                    • Curriculum designed to leverage strengths and offer advanced modules in science<br>
+                                    • Educational excursions to science museums, lectures and education festivals (3 per year)<br>
+                                    • Animal-related activities: 2 hours/week support for continuing volunteering at Cheltenham Animal Shelter<br>
+                                    • Support to maintain and develop service dog training skills<br>
+                                    • Customised curriculum considering gifted and intellectually advanced profile
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Aspiration 3 -->
+                <div class="aspiration-table">
+                    <table>
+                        <tr>
+                            <th style="width: 33%;">Aspiration (A)</th>
+                            <th style="width: 33%;">Outcomes (E)</th>
+                            <th style="width: 34%;">Provision (F)</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="aef-label label-aspiration">Aspiration</span>
+                                <div class="aspiration-text">
+                                    <strong>Career Interest – Fashion Design</strong><br><br>
+                                    👗 I have an interest in fashion design and would love to do work experience at Prada.
+                                </div>
+                            </td>
+                            <td>
+                                <span class="aef-label label-aef-outcome">Outcomes</span>
+                                <div class="aspiration-text">
+                                    <strong>E4:</strong> Amelia will utilise at least two alternative methods for recording information in academic settings, such as speech-to-text software or word processors (useful for fashion design documentation and portfolio development).<br><br>
+                                    Outcomes related to creative and business skills development through curriculum activities.
+                                </div>
+                            </td>
+                            <td>
+                                <span class="aef-label label-aef-provision">Provision</span>
+                                <div class="aspiration-text">
+                                    • 1 hour per week Business Studies tuition (to understand fashion industry and business aspects)<br>
+                                    • Support for creative activities including crochet and making skills development<br>
+                                    • Dog treat business support - developing entrepreneurial skills relevant to fashion enterprise<br>
+                                    • Graphics tablet and stylus for design work<br>
+                                    • ICT resources for digital design work<br>
+                                    • Opportunities to explore creative interests within flexible curriculum
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Aspiration 4 -->
+                <div class="aspiration-table">
+                    <table>
+                        <tr>
+                            <th style="width: 33%;">Aspiration (A)</th>
+                            <th style="width: 33%;">Outcomes (E)</th>
+                            <th style="width: 34%;">Provision (F)</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="aef-label label-aspiration">Aspiration</span>
+                                <div class="aspiration-text">
+                                    <strong>Physical Health & Fitness</strong><br><br>
+                                    💪 I would like to regain my fitness level by exercising in a way I can cope with, so I hopefully do not go back into a wheelchair the next time I have a relapse in my CRPS.
+                                </div>
+                            </td>
+                            <td>
+                                <span class="aef-label label-aef-outcome">Outcomes</span>
+                                <div class="aspiration-text">
+                                    <strong>E6:</strong> Amelia will successfully transition to a full time EOTAS package, maintaining active engagement in her educational activities at least 80% of the time. She will be able to request support with personal care and mobility from a key adult when required.<br><br>
+                                    <strong>E7:</strong> Amelia will identify and utilise at least three effective strategies when sensory overload occurs, for example making use of a quiet space in the learning environment, as verified by education leaders.
+                                </div>
+                            </td>
+                            <td>
+                                <span class="aef-label label-aef-provision">Provision</span>
+                                <div class="aspiration-text">
+                                    • <strong>Occupational Therapy:</strong> Minimum 60 minutes per week direct OT (integrated, multidisciplinary approach)<br>
+                                    • <strong>Physiotherapy:</strong> Daily home physiotherapy exercises; Community physiotherapy once per month; Extensive physical treatment programme to regain strength and stamina<br>
+                                    • <strong>Physical wellbeing activities:</strong> 2 hours per week for groups/activities promoting physical and mental wellbeing (yoga, hydrotherapy, gym fitness, archery)<br>
+                                    • 2 hours per week PE tailored to interests and following GOSH guidance<br>
+                                    • LSA support for mobility, transitions, and physical access needs<br>
+                                    • Biopsychosocial approach considering all aspects of life<br>
+                                    • 24-hour sensory management strategies embedded throughout day
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Aspiration 5 -->
+                <div class="aspiration-table">
+                    <table>
+                        <tr>
+                            <th style="width: 33%;">Aspiration (A)</th>
+                            <th style="width: 33%;">Outcomes (E)</th>
+                            <th style="width: 34%;">Provision (F)</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="aef-label label-aspiration">Aspiration</span>
+                                <div class="aspiration-text">
+                                    <strong>Archery Goals</strong><br><br>
+                                    🎯 I would really like to improve my archery skills and possibly compete in regional and national competitions.<br><br>
+                                    🤝 I would also like to help my archery club and volunteer more often.
+                                </div>
+                            </td>
+                            <td>
+                                <span class="aef-label label-aef-outcome">Outcomes</span>
+                                <div class="aspiration-text">
+                                    <strong>E2:</strong> Amelia will be able to participate in small group activities with up to three peers who share similar interests and hobbies, for 20 minutes, three times weekly (archery provides this social opportunity).<br><br>
+                                    <strong>E7:</strong> Amelia will identify and utilise at least three effective strategies when sensory overload occurs (archery as a regulating activity).
+                                </div>
+                            </td>
+                            <td>
+                                <span class="aef-label label-aef-provision">Provision</span>
+                                <div class="aspiration-text">
+                                    • 2 hours per week access to groups, activities and resources promoting physical and mental wellbeing - <strong>specifically including archery</strong><br>
+                                    • 2 hours per week PE provision in the form of interests (archery sessions)<br>
+                                    • Support to continue regular archery sessions and skill development<br>
+                                    • Support for volunteering at archery club<br>
+                                    • LSA support for accessing community activities<br>
+                                    • Transport and access support for archery club attendance
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Aspiration 6 -->
+                <div class="aspiration-table">
+                    <table>
+                        <tr>
+                            <th style="width: 33%;">Aspiration (A)</th>
+                            <th style="width: 33%;">Outcomes (E)</th>
+                            <th style="width: 34%;">Provision (F)</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="aef-label label-aspiration">Aspiration</span>
+                                <div class="aspiration-text">
+                                    <strong>Animal Welfare & Volunteering</strong><br><br>
+                                    💚 I adore animals and have raised money for animal charities. I currently volunteer at Cheltenham Animal Shelter.<br><br>
+                                    🐕 I have worked hard to train my own service dog. She helps me to walk up and down stairs and to stay mobile when I am having a CRPS relapse.
+                                </div>
+                            </td>
+                            <td>
+                                <span class="aef-label label-aef-outcome">Outcomes</span>
+                                <div class="aspiration-text">
+                                    <strong>E2:</strong> Amelia will be able to participate in small group activities with up to three peers who share similar interests and hobbies, for 20 minutes, three times weekly (animal shelter provides this opportunity).<br><br>
+                                    <strong>E6:</strong> Amelia will be able to request support with personal care and mobility from a key adult when required (including support for service dog management).
+                                </div>
+                            </td>
+                            <td>
+                                <span class="aef-label label-aef-provision">Provision</span>
+                                <div class="aspiration-text">
+                                    • 2 hours per week social and emotional support provision which can include animal-related activities<br>
+                                    • Support for continuing volunteering at Cheltenham Animal Shelter<br>
+                                    • Weekly support to access local community connections centred around interests (animals)<br>
+                                    • Support for service dog training and management<br>
+                                    • LSA support for accessing community animal welfare activities<br>
+                                    • Support for dog treat business development (combining animal welfare with entrepreneurial skills)<br>
+                                    • Constant stimulation activities focusing on animal science interests
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Parents' Aspirations -->
+            <div class="aspiration-category">
+                <div class="category-header">👨‍👩‍👧 Parents' Aspirations</div>
+                
+                <!-- Parent Aspiration 1 -->
+                <div class="aspiration-table">
+                    <table>
+                        <tr>
+                            <th style="width: 33%;">Aspiration (A)</th>
+                            <th style="width: 33%;">Outcomes (E)</th>
+                            <th style="width: 34%;">Provision (F)</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="aef-label label-aspiration">Aspiration</span>
+                                <div class="aspiration-text">
+                                    <strong>Overall Wellbeing & Happiness</strong><br><br>
+                                    😊 Mr and Mrs Lockwood want me to be happy, healthy and to lead a full and enriching life with no limitations and every opportunity given to reach my potential.
+                                </div>
+                            </td>
+                            <td>
+                                <span class="aef-label label-aef-outcome">Outcomes</span>
+                                <div class="aspiration-text">
+                                    <strong>All Outcomes E1-E7</strong> contribute to Amelia's overall wellbeing and happiness by addressing her communication, learning, emotional, and physical needs holistically to enable her to reach her potential.
+                                </div>
+                            </td>
+                            <td>
+                                <span class="aef-label label-aef-provision">Provision</span>
+                                <div class="aspiration-text">
+                                    • <strong>Full multidisciplinary team approach:</strong> EOTAS coordinator, experienced teachers, SLT (27 hrs/year), OT (60 mins/week), Physiotherapy, LSA, psychotherapy<br>
+                                    • Half-termly MDT meetings (6 hrs OT time/year) to ensure cohesive, holistic programme<br>
+                                    • 28 hours per week comprehensive education provision<br>
+                                    • Biopsychosocial approach considering all aspects of life<br>
+                                    • Flexible curriculum responsive to wellbeing and pain levels<br>
+                                    • 2 hrs/week physical and mental wellbeing activities<br>
+                                    • Enriching life experiences through educational excursions
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Parent Aspiration 2 -->
+                <div class="aspiration-table">
+                    <table>
+                        <tr>
+                            <th style="width: 33%;">Aspiration (A)</th>
+                            <th style="width: 33%;">Outcomes (E)</th>
+                            <th style="width: 34%;">Provision (F)</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="aef-label label-aspiration">Aspiration</span>
+                                <div class="aspiration-text">
+                                    <strong>Independence & Autonomy</strong><br><br>
+                                    🚀 They would like me to have greater independence and access to things without being totally reliant on another person.<br><br>
+                                    🌱 They want me to grow into my pre-teen years and gain the independence and exposure to a lifestyle that meets my profile.
+                                </div>
+                            </td>
+                            <td>
+                                <span class="aef-label label-aef-outcome">Outcomes</span>
+                                <div class="aspiration-text">
+                                    <strong>E1:</strong> On a daily basis, Amelia will be able to independently initiate conversations and seek assistance through questions (developing independence in communication).<br><br>
+                                    <strong>E4:</strong> Amelia will utilise at least two alternative methods for recording information independently.<br><br>
+                                    <strong>E5:</strong> Amelia will demonstrate the ability to express her emotions using an agreed strategy to trusted adults in 90% of situations (emotional independence).<br><br>
+                                    <strong>E6:</strong> She will be able to request support with personal care and mobility from a key adult when required (advocating for own needs).
+                                </div>
+                            </td>
+                            <td>
+                                <span class="aef-label label-aef-provision">Provision</span>
+                                <div class="aspiration-text">
+                                    • <strong>Life skills support:</strong> OT input addressing life skills and independence<br>
+                                    • Constant stimulation activities to develop focus and mental hyperactivity management<br>
+                                    • ICT resources and equipment enabling independent work (laptop, software, assistive technology)<br>
+                                    • Break cards and communication tools for self-advocacy<br>
+                                    • Support to develop bank of self-regulation strategies<br>
+                                    • Emotional toolkit with 5+ coping mechanisms<br>
+                                    • Access to community activities independently with LSA support<br>
+                                    • Development of problem-solving skills through curriculum
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Parent Aspiration 3 -->
+                <div class="aspiration-table">
+                    <table>
+                        <tr>
+                            <th style="width: 33%;">Aspiration (A)</th>
+                            <th style="width: 33%;">Outcomes (E)</th>
+                            <th style="width: 34%;">Provision (F)</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="aef-label label-aspiration">Aspiration</span>
+                                <div class="aspiration-text">
+                                    <strong>Comprehensive Assessment & Support</strong><br><br>
+                                    🏥 They would like all of my learning, physical and mental health needs to have been assessed, diagnosed and the right support put in place.
+                                </div>
+                            </td>
+                            <td>
+                                <span class="aef-label label-aef-outcome">Outcomes</span>
+                                <div class="aspiration-text">
+                                    <strong>All Outcomes E1-E7</strong> are informed by comprehensive specialist assessments (Educational Psychology, Speech & Language Therapy, Occupational Therapy, Optometry, Auditory Processing) ensuring all learning, physical and mental health needs are identified and targeted.
+                                </div>
+                            </td>
+                            <td>
+                                <span class="aef-label label-aef-provision">Provision</span>
+                                <div class="aspiration-text">
+                                    • <strong>Specialist multidisciplinary team:</strong><br>
+                                    &nbsp;&nbsp;- Speech & Language Therapist: 27 hrs/year (12 direct, 15 indirect)<br>
+                                    &nbsp;&nbsp;- Occupational Therapist: 60 mins/week direct therapy<br>
+                                    &nbsp;&nbsp;- Physiotherapist: daily home programme + monthly community physio<br>
+                                    &nbsp;&nbsp;- Psychotherapy/psychological therapy: 1 hr/week<br>
+                                    &nbsp;&nbsp;- Care Farm/SEMH provision: 2 hrs/week<br>
+                                    • Further assessment for Dysgraphia and auditory processing disorder<br>
+                                    • Half-termly MDT review meetings<br>
+                                    • Annual Review with 3 hrs OT time for report preparation<br>
+                                    • 2 hrs/year OT training for all professionals<br>
+                                    • Ongoing monitoring and adjustment of all interventions
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Parent Aspiration 4 -->
+                <div class="aspiration-table">
+                    <table>
+                        <tr>
+                            <th style="width: 33%;">Aspiration (A)</th>
+                            <th style="width: 33%;">Outcomes (E)</th>
+                            <th style="width: 34%;">Provision (F)</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="aef-label label-aspiration">Aspiration</span>
+                                <div class="aspiration-text">
+                                    <strong>Neurodivergent-Appropriate Activities</strong><br><br>
+                                    🌈 They don't want me to be limited to accessing things dictated by society's conventions - I'm autistic so I will enjoy activities designed for neurodivergent people.
+                                </div>
+                            </td>
+                            <td>
+                                <span class="aef-label label-aef-outcome">Outcomes</span>
+                                <div class="aspiration-text">
+                                    <strong>E2:</strong> Amelia will be able to participate in small group activities with up to three peers who share similar interests and hobbies (neurodivergent-friendly social experiences).<br><br>
+                                    <strong>E7:</strong> Amelia will identify and utilise at least three effective strategies when sensory overload occurs (autism-informed coping strategies).
+                                </div>
+                            </td>
+                            <td>
+                                <span class="aef-label label-aef-provision">Provision</span>
+                                <div class="aspiration-text">
+                                    • Weekly support to access community/online connections centred around common interests (Music, Crochet, Gaming) providing social experiences without conversation demands<br>
+                                    • Activities appropriate to neurodivergent profile, not dictated by age conventions<br>
+                                    • Support for interests: archery, animal volunteering, crochet, gaming, music<br>
+                                    • Low arousal environment for all learning<br>
+                                    • Autism-informed approaches by all staff with ASD training<br>
+                                    • Visual supports, social scripts, topic cards<br>
+                                    • Resources: Social Thinking, Socially Speaking, Talkabout, Comic Strip Conversations<br>
+                                    • Sensory-friendly safe spaces<br>
+                                    • Understanding of autistic communication style by all conversation partners
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Parent Aspiration 5 -->
+                <div class="aspiration-table">
+                    <table>
+                        <tr>
+                            <th style="width: 33%;">Aspiration (A)</th>
+                            <th style="width: 33%;">Outcomes (E)</th>
+                            <th style="width: 34%;">Provision (F)</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="aef-label label-aspiration">Aspiration</span>
+                                <div class="aspiration-text">
+                                    <strong>Mental Health & Trauma Support</strong><br><br>
+                                    💪 They want to see me supported to manage my stress and anxiety, with professional input to help me deal with past and present trauma so I can develop trust, social setting tolerance and self-love.<br><br>
+                                    🧠 They want me to be able to access the right type of therapy for my mental health that works for me.
+                                </div>
+                            </td>
+                            <td>
+                                <span class="aef-label label-aef-outcome">Outcomes</span>
+                                <div class="aspiration-text">
+                                    <strong>E1 (iv):</strong> Amelia will demonstrate increased confidence in her own communication skills through use of a self-rating scale (0-10) representing her feelings of communicative confidence in different contexts.<br><br>
+                                    <strong>E5:</strong> Amelia will demonstrate the ability to express her emotions using an agreed strategy (verbally or non-verbally) to trusted adults in 90% of situations where she experiences heightened emotional states.<br><br>
+                                    <strong>E7:</strong> Amelia will identify and utilise at least three effective strategies when sensory overload occurs.
+                                </div>
+                            </td>
+                            <td>
+                                <span class="aef-label label-aef-provision">Provision</span>
+                                <div class="aspiration-text">
+                                    • <strong>Psychotherapy:</strong> 1 hour per week psychological therapy<br>
+                                    • <strong>Emotional regulation support:</strong> 1x40 mins/week by LSA skilled in autism and complex SEN, using evidence-based methods (Zones of Regulation)<br>
+                                    • <strong>SEMH provision:</strong> 2 hours/week social and emotional support at Care Farm or alternative provision<br>
+                                    • CBT strategies with age-appropriate psychoeducation on stress/brain function<br>
+                                    • Daily check-in system for emotional state and pain levels<br>
+                                    • Designated safe space with sensory toolkit<br>
+                                    • Personalised emotional toolkit (5+ coping mechanisms)<br>
+                                    • Break cards for emotional dysregulation<br>
+                                    • Liaison with GOSH specialists<br>
+                                    • CAMHS support for ADHD medication and CBT<br>
+                                    • Pre/post intervention evaluations, half-termly SMART objective reviews
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Parent Aspiration 6 -->
+                <div class="aspiration-table">
+                    <table>
+                        <tr>
+                            <th style="width: 33%;">Aspiration (A)</th>
+                            <th style="width: 33%;">Outcomes (E)</th>
+                            <th style="width: 34%;">Provision (F)</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="aef-label label-aspiration">Aspiration</span>
+                                <div class="aspiration-text">
+                                    <strong>Bespoke Educational Provision</strong><br><br>
+                                    📚 They want me to have a bespoke educational provision that can support my special educational needs and allow me to reach and exceed my potential given my gifted and intellectually advanced profile.<br><br>
+                                    🎓 They want to see the playing field evened for me so I can achieve my goal of going to Hartpury College despite my health setbacks and special educational needs. Priority support should be given to the GCSE subjects I need for entry.
+                                </div>
+                            </td>
+                            <td>
+                                <span class="aef-label label-aef-outcome">Outcomes</span>
+                                <div class="aspiration-text">
+                                    <strong>E3:</strong> Amelia will be meeting age related expectations in literacy and numeracy as evidenced by appropriate assessments and ongoing teacher evaluations (for Hartpury College GCSE entry requirements).<br><br>
+                                    <strong>E4:</strong> Amelia will utilise at least two alternative methods for recording information and report a positive impact on her learning experience.<br><br>
+                                    <strong>E6:</strong> Amelia will successfully transition to a full time EOTAS package, maintaining active engagement at least 80% of the time.
+                                </div>
+                            </td>
+                            <td>
+                                <span class="aef-label label-aef-provision">Provision</span>
+                                <div class="aspiration-text">
+                                    • <strong>Fully bespoke EOTAS package:</strong> 28 hours per week total<br>
+                                    • Priority support for GCSE subjects needed for Hartpury College (Sciences, English, Maths)<br>
+                                    • <strong>Advanced Science provision:</strong> 6 hrs/week (Chemistry, Biology, Physics) recognising gifted intellect<br>
+                                    • Customised curriculum leveraging strengths while accommodating learning challenges<br>
+                                    • Dyslexia-friendly strategies and multisensory learning<br>
+                                    • Flexible curriculum responsive to health setbacks and pain levels<br>
+                                    • Experienced teachers with neurodiversity training<br>
+                                    • SMART goals reviewed half-termly<br>
+                                    • Alternative assessment methods beyond traditional written formats<br>
+                                    • Breaks and low-challenge work when needed<br>
+                                    • Activities leveraging strengths and interests
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Parent Aspiration 7 -->
+                <div class="aspiration-table">
+                    <table>
+                        <tr>
+                            <th style="width: 33%;">Aspiration (A)</th>
+                            <th style="width: 33%;">Outcomes (E)</th>
+                            <th style="width: 34%;">Provision (F)</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="aef-label label-aspiration">Aspiration</span>
+                                <div class="aspiration-text">
+                                    <strong>Communication Compatibility</strong><br><br>
+                                    🗣️ They explain that vetting those who work with me to establish compatibility is a must. I must determine if I can engage with their communication style and they with mine.<br><br>
+                                    ⚠️ They emphasize there is not a one-size-fits-all approach - finding the right person is key as there are no workarounds with the wrong individual as this can cause further trauma.
+                                </div>
+                            </td>
+                            <td>
+                                <span class="aef-label label-aef-outcome">Outcomes</span>
+                                <div class="aspiration-text">
+                                    <strong>E1:</strong> On a daily basis, Amelia will be able to independently initiate conversations with both trusted adults and peers. Amelia will demonstrate increased confidence in her own communication skills with both familiar and unfamiliar people through the use of a self-rating scale.<br><br>
+                                    <strong>E5:</strong> Amelia will demonstrate the ability to express her emotions using an agreed strategy to trusted adults in 90% of situations.
+                                </div>
+                            </td>
+                            <td>
+                                <span class="aef-label label-aef-provision">Provision</span>
+                                <div class="aspiration-text">
+                                    • <strong>SLT with gradual relationship building:</strong> Flexible, carefully tailored direct input sensitive to Amelia's 'readiness' and wellbeing - working towards 3x45 min sessions per half term<br>
+                                    • Focus on building trusting relationship through low-demand activities and informal reciprocal interaction<br>
+                                    • All conversation partners attuned to Amelia's communication style<br>
+                                    • Phased introduction to new settings and adults<br>
+                                    • New adults initially visit Amelia at home to establish rapport in familiar environment<br>
+                                    • Vetting process for staff compatibility<br>
+                                    • Experienced teachers with ASD/ADHD training who understand Amelia's complex profile<br>
+                                    • LSA trained in autistic communication style<br>
+                                    • Sufficient time for mental and emotional adaptation to changes<br>
+                                    • No workarounds with incompatible individuals to prevent further trauma
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Golden Thread (BEF) -->
+        <div class="golden-thread-container">
+            <h2 class="golden-thread-title">Section BEF – The Golden Thread</h2>
+            <p style="text-align: center; margin-bottom: 20px; color: #7c2d12; font-weight: 600;">
+                All Section B needs populated below - scroll within each column to see all needs
+            </p>
+            
+            <div class="golden-thread-grid">
+                <!-- Column 1: Cognition and Learning -->
+                <div class="column">
+                    <div class="column-header">Cognition and Learning</div>
+                    <div class="column-content">
+                        <div class="need-block">
+                            <span class="label label-need">NEED 1</span>
+                            <div class="need-text">Amelia's progress in learning is affected by significant barriers including chronic regional pain syndrome (CRPS), Autism, ADHD and the multi-faceted challenges associated with these conditions.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED 2</span>
+                            <div class="need-text">English presents more of a challenge for Amelia, however, her single word reading skills, reading fluency, and comprehension all fall within the average range suggesting that she has the foundational skills necessary for continued growth in this area.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED 3</span>
+                            <div class="need-text">Amelia's specific learning difficulties, including Dyslexia, pose challenges to her progress especially in the subject of English. She experiences anxiety around understanding and completing learning tasks and exhibits noticeable fatigue during extended writing tasks.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED 4</span>
+                            <div class="need-text">Amelia has spelling, word-copying and handwriting difficulties.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED 5</span>
+                            <div class="need-text">Amelia's processing skills are significantly different from her other cognitive abilities which is evident in her writing skills. These challenges lead to understandable frustrations for her as she struggles to articulate her ideas in writing at the same speed and precision with which she can verbalise them.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED 6</span>
+                            <div class="need-text">Amelia has focus, concentration, problem-solving, executive functioning, impulsivity, planning, organisational and emotional, behavioural and cognitive regulation difficulties consistent with her diagnosis of ADHD. Her emotional regulation and executive functioning difficulties impact her readiness to learn. Her hyperactive brain can cause her to build up excess energy during the day.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED 7</span>
+                            <div class="need-text">Amelia has gaps in her learning due to her time out of formal education.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED 8</span>
+                            <div class="need-text">A Behaviour Optometry assessment found that Amelia does show some level of reduced visual perceptual skill compared to age matched individuals. She will likely find it quite difficult to easily make sense of what she is seeing and orient herself if she is presented with visually crowded information such as a book with lots of dense text. She will find things like word searches more difficult. She may also struggle with concepts like mind maps and may find interpreting graphs and pie charts more challenging than other young people her age. Reading text across coloured background pictures (as may be seen in some branding or picture books) will also be more difficult for Amelia than her peers.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED 9</span>
+                            <div class="need-text">A Behaviour Optometrist reports that teaching Amelia with the use of resources such as pie charts and graphs will be challenging for her. However, it is thought that if a pie chart is the only item that is presented on a page, with no disturbing backgrounds, that Amelia may understand this very easily. This may be the case with other visually demanding tasks (eg mind maps), Amelia may find them useful but needs to have plenty space on the page to use the information efficiently.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Communication and Interaction -->
+                <div class="column">
+                    <div class="column-header">Communication and Interaction</div>
+                    <div class="column-content">
+                        <div class="need-block">
+                            <span class="label label-need">NEED 1</span>
+                            <div class="need-text">Amelia presents as a socially and emotionally vulnerable young person with a complex and highly disordered profile of non-verbal communication and social interaction skills associated with her underlying diagnoses of Autistic Spectrum Disorder, Attention Deficit Hyperactivity Disorder and complex medical and mental health needs.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED 2</span>
+                            <div class="need-text">Amelia has an uneven/disordered communication profile of stronger and weaker areas, with Amelia's abilities falling between a wide range, from below 1st to 63rd centile. This 'spiky' speech, language and social interaction profile continues to have a significant impact on Amelia as a learner, in addition to significantly affecting her social and emotional well-being.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED 3</span>
+                            <div class="need-text">Amelia's communication style varies considerably, dependent on the context in which she is in, her emotional state, and the purpose/theme of the interaction. In situations which Amelia perceives as socially challenging, or where she is feeling anxious, she may limit her contributions (keeping them brief and 'to the point'), withdraw from interaction altogether, or may to try and 'manage' the situation through the introduction of her own pseudo-mature comments and dominant language.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED 4</span>
+                            <div class="need-text">She can become noticeably withdrawn or distressed when faced with social demands.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED 5</span>
+                            <div class="need-text">Amelia's efficacy as a communicator is significantly influenced by her physical and mental well-being. On days when she experiences heightened levels of pain or anxiety, her ability to articulate herself clearly can be compromised.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED 6</span>
+                            <div class="need-text">Amelia non-verbal communication skills are disordered, consistent with her diagnosis of Autism. She can find staying on topic difficult and prefers her own subjects of interest. Amelia's ability to communicate her emotions are significantly delayed. She has social communication difficulties which includes poor theory of mind, conversation initiation and reciprocation, reading of body language, social etiquette, maintaining a balance of dialogue, keeping to topic, showing awareness of the role of others when interacting, and conveying appropriate emotion/feeling in her output. Amelia is reluctant to communicate with new people and prefers the company of those older than her.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED 7</span>
+                            <div class="need-text">Amelia's speech lacks subtlety in terms of pitch, volume and tone of voice, with her output typically quiet and monotonous, and lacking in meaningful 'colour'/emotion.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED 8</span>
+                            <div class="need-text">Amelia's receptive language skills are mixed. Whilst core skills are secure, Amelia can find it harder to understand the more nuanced and abstract content of spoken language. She tends to interpret what she hears literally, finding it harder to understand subtle, inferred language and ambiguity, this impacting on her success at "reading" situations and leading to social vulnerability, confusion and anxiety.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED 9</span>
+                            <div class="need-text">Amelia's profile of expressive speech and language skills is mixed/ 'spiky', with core skills secure, but a marked contrast with higher-level skills such as planning/organising complex language and using language more creatively.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED 10</span>
+                            <div class="need-text">Amelia presents with variable attention and listening skills, with her ability to maintain focus within both conversation and structured tasks impacted by the context in which she is in, competing sensory demands and, most significantly, her underlying physical health and emotional state.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED 11</span>
+                            <div class="need-text">When in a low arousal and 'safe' context, and when confident of what is expected of her, Amelia appears more able to focus, although she may well seek to assertively direct/'manage' interaction, and can, at times, rigidly hyper-focus on her own agenda. In contrast, when anxiety levels are high, Amelia's levels of engagement and observable processing of language appears to deteriorate, although she is nonetheless often hyper-aware and discreetly monitoring her environment.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED 12</span>
+                            <div class="need-text">When in a state of high anxiety, Amelia may show significant delay/hesitancy in her response to questions or directions, but at other times she approaches both conversation and tasks in a fast-paced and impulsive manner which can then lead to mis-hearing and misunderstanding instructions.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED 13</span>
+                            <div class="need-text">A Behaviour optometrist reports that Amelia has been assessed for auditory discrimination as she has difficulty with distinguishing what she hears in her right and her left ear. An example would be when having to concentrate and repeat a heard syllables on each ear which she was often overwhelmed and unable to remember either of them.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 3: Social, Emotional and Mental Health -->
+                <div class="column">
+                    <div class="column-header">Social, Emotional and Mental Health</div>
+                    <div class="column-content">
+                        <div class="need-block">
+                            <span class="label label-need">NEED 1</span>
+                            <div class="need-text">Amelia presents clinically significant levels of anxiety, encompassing generalised anxiety, separation anxiety, social phobia and panic disorder.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED 2</span>
+                            <div class="need-text">Her anxiety spans a wide array of concerns from generalised worries about adverse events to specific issues like separation from her parents, limited friendships, environmental sensory stimuli across the four senses of sound, smell, sight and touch such as noise and crowds, and difficulties in understanding or completing academic tasks. In addition to anxiety being intrinsically connected to her diagnosis of Autism, Amelia's medical conditions (which result in extended periods of severe pain) add an additional layer of complexity, giving rise to significant stressors that further exacerbate difficulties with her mental wellbeing.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED 3</span>
+                            <div class="need-text">Amelia's anxiety has a range of triggers including but not limited to sensory processing differences; social communication difficulties and the resulting overwhelm from social situations; anxiety related to change; difficulties with processing; learning difficulties including dyslexia; and experiencing significant pain.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED 4</span>
+                            <div class="need-text">Amelia's difficulties with school attendance are also impacted by her diagnosis of ASD and anxiety. Amelia is extremely concerned that someone will bump into her in school and cause her pain to increase. Within the school environment, Amelia displayed emotional shutdowns where she is unable to communicate with others and express her needs which leads her to being particularly vulnerable.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED 5</span>
+                            <div class="need-text">Amelia experiences internal and external meltdowns as well as emotional 'shutdowns' where she is unable to communicate with those around her. When this happens, Amelia is unable to engage in communication with others.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED 6</span>
+                            <div class="need-text">Amelia is vulnerable in social situations due to her limited social and emotional understanding.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED 7</span>
+                            <div class="need-text">Amelia shows limited understanding or recognition of her own emotional state.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED 8</span>
+                            <div class="need-text">Routine changes can heighten anxiety. Transitions are very difficult. She takes a long time to settle in a new environment.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 4: Sensory / Physical -->
+                <div class="column">
+                    <div class="column-header">Sensory / Physical</div>
+                    <div class="column-content">
+                        <p style="background: #fff3cd; padding: 10px; border-radius: 5px; margin-bottom: 15px; font-size: 0.9em;">
+                            <strong>Note:</strong> 26 needs total (19 Sensory Processing + 7 Motor Skills). Scroll to see all.
+                        </p>
+                        <div class="need-block">
+                            <span class="label label-need">NEED SENSORY 1</span>
+                            <div class="need-text">Amelia presents with sensory processing and regulation difficulties impacting on her ability to attend and concentrate for learning, emotional, regulation and her independence skills and social interaction.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED SENSORY 2</span>
+                            <div class="need-text">Amelia has always been sensitive to all sorts of stimuli, especially touch, noise, and smells. Amelia's parents report that Amelia presents with sensitivity across all of the senses, from sounds such as burping, the sound of paper rubbing, screaming, low level machine noises such as air con. In addition, they note that flashing lights can be distressing for Amelia.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED SENSORY 3</span>
+                            <div class="need-text">She startles very easily.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED SENSORY 4</span>
+                            <div class="need-text">Flare ups related to CPRS dramatically increase Amelia's sensitivity, to the point where she cannot tolerate even at the lightest of touch.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED SENSORY 5</span>
+                            <div class="need-text">Amelia experiences extreme hypersensitivity in response to noise, especially loud or unexpected noise leading to significant distress. She finds it very difficult to attend in an environment with background noise.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED SENSORY 6</span>
+                            <div class="need-text">She is very easily distracted by minimal amounts of auditory and visual stimuli.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED SENSORY 7</span>
+                            <div class="need-text">Amelia becomes distressed in busy, sensory rich environments. This can be very overwhelming and result in difficulties identifying who is speaking and where the voice or noise is coming from.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED SENSORY 8</span>
+                            <div class="need-text">Amelia displays significant sensitivity towards tactile stimuli. This impacts greatly on the clothing she finds comfortable to wear. She intensely dislikes self-care activities such as nail cutting, face washing, washing and brushing her hair and brushing her teeth.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED SENSORY 9</span>
+                            <div class="need-text">Amelia does eat a variety of foods. She is highly sensitive to smells.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED SENSORY 10</span>
+                            <div class="need-text">Dr Juliet Staddon explains that Amelia has difficulties with body temperature regulation, always being hot which is noted in people with autism due to difficulty to regulate body temperature due to sensory integration.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED SENSORY 11</span>
+                            <div class="need-text">Amelia has difficulties grading the amount of force she needs to use. She seeks proprioceptive feedback by chewing on non-food items.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED SENSORY 12</span>
+                            <div class="need-text">Amelia is sensitive to movement, she trips and falls easily and does not like positions that require her to tilt her head off balance.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED SENSORY 13</span>
+                            <div class="need-text">Amelia finds integrating sensory input and maintaining a degree of regulation difficult. This will cause her to tire quickly throughout the day due to the additional demands she faces within the learning and social environments.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED SENSORY 14</span>
+                            <div class="need-text">Amelia finds multisensory processing (i.e., ability to receive and process information from a variety of senses or within a busy and sensory-rich environment) overwhelming.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED SENSORY 15</span>
+                            <div class="need-text">Amelia has difficulties with interoception including the regulation of temperature and satiety.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED SENSORY 16</span>
+                            <div class="need-text">Amelia dislikes being overheated and rarely agrees to wear a coat. However, her right limb, which is affected by CRPS requires warmth as its temperature drops very quickly. She does not register this and requires an adult to monitor whether it is an appropriate temperature.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED SENSORY 17</span>
+                            <div class="need-text">Amelia does not appear to register hunger and will go up to 9 hours without eating until she suddenly feels ravenous.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED SENSORY 18</span>
+                            <div class="need-text">Amelia's mood is easily affected by environmental or sensory changes, especially when things occur that she is not expecting.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED SENSORY 19</span>
+                            <div class="need-text">She has an aversion to labels and stickers. Amelia's parents report that the sight or touch of labels make Amelia feel sick and that she is not able to touch items that have had a sticky label on.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED MOTOR 1</span>
+                            <div class="need-text">Amelia has a comorbid complex diagnostic profile impacting on her physical presentation including Chronic Primary Pain Regional Pain Syndrome (CRPS), Chronic Spontaneous Urticaria (CSU) (hives) and Angioedema (swelling under the skin surface due to allergic reaction) caused by a constant state of hypersensitivity to the body.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED MOTOR 2</span>
+                            <div class="need-text">Chronic Spontaneous Urticaria (CSU) is a common and distressing skin condition that causes red, raised, itchy and sometimes painful hives or wheals (raised rash or patches) on the skin. Triggers for this may include a variety of factors including food stress, and environmental factors that can trigger Amelia's symptoms. Both CRPS and CSU are debilitating conditions that significantly impact Amelia's physical and mental well-being.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED MOTOR 3</span>
+                            <div class="need-text">CRPS causes episodes of pain that can vary in duration; some may last only a few weeks, while others may persist for a more extended period. Amelia's pain flares can be so debilitating that she is unable to get out of bed. During severe periods, Amelia is wheelchair-bound and requires physical support and environmental adaptations to manage her daily activities.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED MOTOR 4</span>
+                            <div class="need-text">Although overall Amelia's pain has improved, this journey has not followed a linear trajectory of continuous improvement. Rather there have been times where her pain has worsened, and her function has decreased. She continues to experience times where her pain increases and during these periods her leg remains sensitive to touch. She is unable to fully straighten her right leg and continues to work on this aspect of physical function.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED MOTOR 5</span>
+                            <div class="need-text">Her autism and ADHD diagnoses impact on how pain is experienced and make self-managing pain more challenging.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED MOTOR 6</span>
+                            <div class="need-text">Cold weather tends to worsen her pain symptoms.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                        <div class="need-block">
+                            <span class="label label-need">NEED MOTOR 7</span>
+                            <div class="need-text">Amelia has a severe biopsychosocial pain condition that predominantly affects her lower limbs. This has limited her ability to stand up, transfer or walk. This impacts her ability to access education and particularly educational settings which are not adapted for accessibility. This condition is further complicated by Amelia's Autism diagnosis which alters her perspective and causes issues with sensory perception and her ability to understand how to manage her pain. Amelia also has anxiety and struggles to manage this which also impacts upon her ability to function.</div>
+                            <span class="label label-outcome">Outcomes</span>
+                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <span class="label label-provision">Provision</span>
+                            <div class="provision-text">Add provision(s) linked to this need here</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Section C + G: Health Care Needs and Provision -->
+        <div class="health-care-section">
+            <h2 class="subsection-title">Section C + G – Health Care Needs and Provision</h2>
+            
+            <div class="two-col-grid">
+                <div>
+                    <div class="col-header">Health Care Need</div>
+                    <div class="col-content">Add health care need description here</div>
+                </div>
+                <div>
+                    <div class="col-header">Provision</div>
+                    <div class="col-content">Add provision linked to this health care need here</div>
+                </div>
+            </div>
+
+            <div class="two-col-grid">
+                <div>
+                    <div class="col-header">Health Care Need</div>
+                    <div class="col-content">Add health care need description here</div>
+                </div>
+                <div>
+                    <div class="col-header">Provision</div>
+                    <div class="col-content">Add provision linked to this health care need here</div>
+                </div>
+            </div>
+
+            <div class="two-col-grid">
+                <div>
+                    <div class="col-header">Health Care Need</div>
+                    <div class="col-content">Add health care need description here</div>
+                </div>
+                <div>
+                    <div class="col-header">Provision</div>
+                    <div class="col-content">Add provision linked to this health care need here</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section D + H1/H2: Social Care Needs and Provision -->
+        <div class="social-care-section">
+            <h2 class="subsection-title">Section D + H1/H2 – Social Care Needs and Provision</h2>
+            
+            <div class="two-col-grid">
+                <div>
+                    <div class="col-header">Social Care Need</div>
+                    <div class="col-content">Add social care need description here</div>
+                </div>
+                <div>
+                    <div class="col-header">Provision</div>
+                    <div class="col-content">Add provision linked to this social care need here</div>
+                </div>
+            </div>
+
+            <div class="two-col-grid">
+                <div>
+                    <div class="col-header">Social Care Need</div>
+                    <div class="col-content">Add social care need description here</div>
+                </div>
+                <div>
+                    <div class="col-header">Provision</div>
+                    <div class="col-content">Add provision linked to this social care need here</div>
+                </div>
+            </div>
+
+            <div class="two-col-grid">
+                <div>
+                    <div class="col-header">Social Care Need</div>
+                    <div class="col-content">Add social care need description here</div>
+                </div>
+                <div>
+                    <div class="col-header">Provision</div>
+                    <div class="col-content">Add provision linked to this social care need here</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
