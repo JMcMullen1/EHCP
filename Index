@@ -997,7 +997,7 @@
                             <span class="label label-need">NEED 1</span>
                             <div class="need-text">Amelia's progress in learning is affected by significant barriers including chronic regional pain syndrome (CRPS), Autism, ADHD and the multi-faceted challenges associated with these conditions.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses supporting Amelia's learning progress while managing the impact of CRPS, Autism, and ADHD, with specific measurable indicators of academic progress despite these barriers.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1005,7 +1005,7 @@
                             <span class="label label-need">NEED 2</span>
                             <div class="need-text">English presents more of a challenge for Amelia, however, her single word reading skills, reading fluency, and comprehension all fall within the average range suggesting that she has the foundational skills necessary for continued growth in this area.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong>E3:</strong> Amelia will be meeting age related expectations in literacy (specifically spelling, punctuation and grammar) and numeracy as evidenced by appropriate assessments and ongoing teacher evaluations.<br><br><em>Note: This outcome is weak and vague. It lacks specificity in several ways: (1) "Age-related expectations" is undefined and difficult to measure; (2) It combines multiple distinct skills (spelling, punctuation, grammar, numeracy) without separate baselines or targets; (3) "Appropriate assessments" is not specified; (4) There is no timeframe or baseline for measuring progress; (5) It does not acknowledge Amelia's Dyslexia and the need for differentiated expectations. This outcome should be redesigned to include: specific baseline scores, targeted improvement goals for each skill area separately, named standardized assessments, clear timeframes, and realistic expectations given Amelia's learning profile.</em></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1013,7 +1013,7 @@
                             <span class="label label-need">NEED 3</span>
                             <div class="need-text">Amelia's specific learning difficulties, including Dyslexia, pose challenges to her progress especially in the subject of English. She experiences anxiety around understanding and completing learning tasks and exhibits noticeable fatigue during extended writing tasks.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong>E4:</strong> Amelia will utilise at least two alternative methods for recording information in academic settings, such as speech-to-text software or word processors and report a positive impact on her learning experience.<br><br><em>Note: This outcome is weak as: (1) "Report a positive impact" is subjective and poorly defined; (2) It lacks baseline data on current usage; (3) There is no timeframe or measurement of "utilise" (frequency, independence level); (4) The outcome doesn't specify how impact will be measured objectively. This should be redesigned to include: specific frequency of use (e.g., 80% of written assignments), measures of independence, objective metrics of impact such as completion rates, quality of work produced, or reduced fatigue levels, and clear timeframes.</em></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1021,7 +1021,7 @@
                             <span class="label label-need">NEED 4</span>
                             <div class="need-text">Amelia has spelling, word-copying and handwriting difficulties.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. While E3 and E4 partially relate, a specific outcome is needed that addresses reducing the impact of handwriting and word-copying difficulties through accommodations and/or interventions, with measurable indicators of improved access to the curriculum.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1029,7 +1029,7 @@
                             <span class="label label-need">NEED 5</span>
                             <div class="need-text">Amelia's processing skills are significantly different from her other cognitive abilities which is evident in her writing skills. These challenges lead to understandable frustrations for her as she struggles to articulate her ideas in writing at the same speed and precision with which she can verbalise them.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. While E4 partially addresses alternative recording methods, a specific outcome is needed that measures reduction in frustration and improved ability to express ideas through supported writing methods, with comparison to verbal expression capabilities.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1037,7 +1037,7 @@
                             <span class="label label-need">NEED 6</span>
                             <div class="need-text">Amelia has focus, concentration, problem-solving, executive functioning, impulsivity, planning, organisational and emotional, behavioural and cognitive regulation difficulties consistent with her diagnosis of ADHD. Her emotional regulation and executive functioning difficulties impact her readiness to learn. Her hyperactive brain can cause her to build up excess energy during the day.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses improving executive functioning skills (planning, organization, focus) and managing ADHD-related difficulties to increase readiness to learn, with measurable indicators such as task completion rates, use of organizational strategies, or engagement in learning activities.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1045,7 +1045,7 @@
                             <span class="label label-need">NEED 7</span>
                             <div class="need-text">Amelia has gaps in her learning due to her time out of formal education.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that specifically addresses closing identified learning gaps with baseline assessments, targeted skills/knowledge areas, and measurable progress indicators over time.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1053,7 +1053,7 @@
                             <span class="label label-need">NEED 8</span>
                             <div class="need-text">A Behaviour Optometry assessment found that Amelia does show some level of reduced visual perceptual skill compared to age matched individuals. She will likely find it quite difficult to easily make sense of what she is seeing and orient herself if she is presented with visually crowded information such as a book with lots of dense text. She will find things like word searches more difficult. She may also struggle with concepts like mind maps and may find interpreting graphs and pie charts more challenging than other young people her age. Reading text across coloured background pictures (as may be seen in some branding or picture books) will also be more difficult for Amelia than her peers.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses providing appropriate visual presentation of materials (reduced visual clutter, appropriate spacing, clear backgrounds) and measuring Amelia's improved ability to access and process visual information in learning materials.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1061,7 +1061,7 @@
                             <span class="label label-need">NEED 9</span>
                             <div class="need-text">A Behaviour Optometrist reports that teaching Amelia with the use of resources such as pie charts and graphs will be challenging for her. However, it is thought that if a pie chart is the only item that is presented on a page, with no disturbing backgrounds, that Amelia may understand this very easily. This may be the case with other visually demanding tasks (eg mind maps), Amelia may find them useful but needs to have plenty space on the page to use the information efficiently.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses Amelia's ability to interpret visual learning tools (graphs, pie charts, mind maps) when presented appropriately (single item per page, clear backgrounds, adequate spacing), with measurable indicators of comprehension.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1076,7 +1076,7 @@
                             <span class="label label-need">NEED 1</span>
                             <div class="need-text">Amelia presents as a socially and emotionally vulnerable young person with a complex and highly disordered profile of non-verbal communication and social interaction skills associated with her underlying diagnoses of Autistic Spectrum Disorder, Attention Deficit Hyperactivity Disorder and complex medical and mental health needs.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong>E1(i):</strong> On a daily basis, Amelia will be able to independently initiate conversations with both trusted adults and peers across diverse environments, such as educational and social settings. This interaction will encompass not only casual conversation but also the proactive seeking of assistance or clarification through questions.<br><br><strong>E1(ii):</strong> Amelia will be able to observe examples of social interaction between others (using video, cartoon strips and scripts) and identify/explain at least 2 positive and 2 negative behaviours which support or hinder the success of the communication.<br><br><strong>E2:</strong> Amelia will be able to participate in small group activities with up to three peers who share similar interests and hobbies, for 20 minutes, three times weekly.</div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1084,7 +1084,7 @@
                             <span class="label label-need">NEED 2</span>
                             <div class="need-text">Amelia has an uneven/disordered communication profile of stronger and weaker areas, with Amelia's abilities falling between a wide range, from below 1st to 63rd centile. This 'spiky' speech, language and social interaction profile continues to have a significant impact on Amelia as a learner, in addition to significantly affecting her social and emotional well-being.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that specifically addresses supporting Amelia's uneven communication profile and improving consistency across her stronger and weaker areas.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1092,7 +1092,7 @@
                             <span class="label label-need">NEED 3</span>
                             <div class="need-text">Amelia's communication style varies considerably, dependent on the context in which she is in, her emotional state, and the purpose/theme of the interaction. In situations which Amelia perceives as socially challenging, or where she is feeling anxious, she may limit her contributions (keeping them brief and 'to the point'), withdraw from interaction altogether, or may to try and 'manage' the situation through the introduction of her own pseudo-mature comments and dominant language.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses supporting Amelia's communication across different contexts and emotional states, particularly in reducing withdrawal and anxiety in socially challenging situations.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1100,7 +1100,7 @@
                             <span class="label label-need">NEED 4</span>
                             <div class="need-text">She can become noticeably withdrawn or distressed when faced with social demands.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that focuses on reducing distress and withdrawal when facing social demands, with measurable indicators of Amelia's ability to manage or communicate her needs in these situations.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1108,7 +1108,7 @@
                             <span class="label label-need">NEED 5</span>
                             <div class="need-text">Amelia's efficacy as a communicator is significantly influenced by her physical and mental well-being. On days when she experiences heightened levels of pain or anxiety, her ability to articulate herself clearly can be compromised.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses maintaining communication abilities during periods of heightened pain or anxiety, possibly including alternative communication methods or supports.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1116,7 +1116,7 @@
                             <span class="label label-need">NEED 6</span>
                             <div class="need-text">Amelia non-verbal communication skills are disordered, consistent with her diagnosis of Autism. She can find staying on topic difficult and prefers her own subjects of interest. Amelia's ability to communicate her emotions are significantly delayed. She has social communication difficulties which includes poor theory of mind, conversation initiation and reciprocation, reading of body language, social etiquette, maintaining a balance of dialogue, keeping to topic, showing awareness of the role of others when interacting, and conveying appropriate emotion/feeling in her output. Amelia is reluctant to communicate with new people and prefers the company of those older than her.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong>E1(iv):</strong> Amelia will be able to consistently engage in balanced conversation or discussion with 1 or 2 people (tutors, peers, other professionals) on a daily basis for at least 6 minutes, keeping to topic and making appropriate contributions. Amelia will demonstrate increased confidence in her own communication skills with both familiar and unfamiliar people through the use of a self-rating scale/monitoring system (i.e. using a numbered scale of 0-10 to represent her feelings of communicative confidence and motivation in different contexts/situations).<br><br><em>Note: This outcome is weak as it only addresses conversation duration and topic maintenance, but does not adequately address the broader range of social communication difficulties including theory of mind, reading body language, social etiquette, or communicating emotions. More comprehensive outcomes are needed for these areas.</em></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1124,7 +1124,7 @@
                             <span class="label label-need">NEED 7</span>
                             <div class="need-text">Amelia's speech lacks subtlety in terms of pitch, volume and tone of voice, with her output typically quiet and monotonous, and lacking in meaningful 'colour'/emotion.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses developing prosody, voice modulation, and emotional expression in speech.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1132,7 +1132,7 @@
                             <span class="label label-need">NEED 8</span>
                             <div class="need-text">Amelia's receptive language skills are mixed. Whilst core skills are secure, Amelia can find it harder to understand the more nuanced and abstract content of spoken language. She tends to interpret what she hears literally, finding it harder to understand subtle, inferred language and ambiguity, this impacting on her success at "reading" situations and leading to social vulnerability, confusion and anxiety.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong>E1(iii):</strong> Amelia will be able to observe examples of social interaction between others (using video, cartoon strips and scripts) and identify examples of sarcasm, irony, inference, slang, metaphorical language and figurative terms and explain the reason for their use.<br><br><em>Note: This outcome is weak as it only addresses identification and explanation of nuanced language through observation of others, rather than demonstrating comprehension and appropriate response to these language features in real-time social interactions. A stronger outcome would measure Amelia's ability to interpret and respond appropriately to figurative and inferred language when it is directed at her in authentic communication contexts.</em></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1140,7 +1140,7 @@
                             <span class="label label-need">NEED 9</span>
                             <div class="need-text">Amelia's profile of expressive speech and language skills is mixed/ 'spiky', with core skills secure, but a marked contrast with higher-level skills such as planning/organising complex language and using language more creatively.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses developing higher-level expressive language skills, specifically planning/organising complex language and using language creatively.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1148,7 +1148,7 @@
                             <span class="label label-need">NEED 10</span>
                             <div class="need-text">Amelia presents with variable attention and listening skills, with her ability to maintain focus within both conversation and structured tasks impacted by the context in which she is in, competing sensory demands and, most significantly, her underlying physical health and emotional state.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses improving attention and listening skills across different contexts, with consideration for sensory demands and Amelia's physical and emotional state.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1156,7 +1156,7 @@
                             <span class="label label-need">NEED 11</span>
                             <div class="need-text">When in a low arousal and 'safe' context, and when confident of what is expected of her, Amelia appears more able to focus, although she may well seek to assertively direct/'manage' interaction, and can, at times, rigidly hyper-focus on her own agenda. In contrast, when anxiety levels are high, Amelia's levels of engagement and observable processing of language appears to deteriorate, although she is nonetheless often hyper-aware and discreetly monitoring her environment.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses supporting Amelia's engagement and language processing across different arousal and anxiety states, and developing flexibility in interaction (reducing rigid hyper-focus on own agenda).</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1164,7 +1164,7 @@
                             <span class="label label-need">NEED 12</span>
                             <div class="need-text">When in a state of high anxiety, Amelia may show significant delay/hesitancy in her response to questions or directions, but at other times she approaches both conversation and tasks in a fast-paced and impulsive manner which can then lead to mis-hearing and misunderstanding instructions.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses supporting Amelia to process and respond to questions/directions more effectively, managing both anxiety-related delays and impulsive responding to reduce misunderstandings.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1172,7 +1172,7 @@
                             <span class="label label-need">NEED 13</span>
                             <div class="need-text">A Behaviour optometrist reports that Amelia has been assessed for auditory discrimination as she has difficulty with distinguishing what she hears in her right and her left ear. An example would be when having to concentrate and repeat a heard syllables on each ear which she was often overwhelmed and unable to remember either of them.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses supporting Amelia's auditory discrimination difficulties, potentially through environmental modifications and/or auditory training interventions.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1187,7 +1187,7 @@
                             <span class="label label-need">NEED 1</span>
                             <div class="need-text">Amelia presents clinically significant levels of anxiety, encompassing generalised anxiety, separation anxiety, social phobia and panic disorder.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses reducing clinically significant anxiety levels through evidence-based interventions, with measurable indicators such as validated anxiety scales, frequency of anxiety episodes, or functional impact on daily activities.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1195,7 +1195,7 @@
                             <span class="label label-need">NEED 2</span>
                             <div class="need-text">Her anxiety spans a wide array of concerns from generalised worries about adverse events to specific issues like separation from her parents, limited friendships, environmental sensory stimuli across the four senses of sound, smell, sight and touch such as noise and crowds, and difficulties in understanding or completing academic tasks. In addition to anxiety being intrinsically connected to her diagnosis of Autism, Amelia's medical conditions (which result in extended periods of severe pain) add an additional layer of complexity, giving rise to significant stressors that further exacerbate difficulties with her mental wellbeing.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses managing multiple anxiety triggers (sensory, social, academic, pain-related) with specific coping strategies and measurable reduction in anxiety responses across different contexts.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1203,7 +1203,7 @@
                             <span class="label label-need">NEED 3</span>
                             <div class="need-text">Amelia's anxiety has a range of triggers including but not limited to sensory processing differences; social communication difficulties and the resulting overwhelm from social situations; anxiety related to change; difficulties with processing; learning difficulties including dyslexia; and experiencing significant pain.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses identifying and managing specific anxiety triggers, with measurable indicators of Amelia's ability to recognize triggers and employ appropriate coping strategies before/during anxiety episodes.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1211,7 +1211,7 @@
                             <span class="label label-need">NEED 4</span>
                             <div class="need-text">Amelia's difficulties with school attendance are also impacted by her diagnosis of ASD and anxiety. Amelia is extremely concerned that someone will bump into her in school and cause her pain to increase. Within the school environment, Amelia displayed emotional shutdowns where she is unable to communicate with others and express her needs which leads her to being particularly vulnerable.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong>E5:</strong> Amelia will demonstrate the ability to express her emotions using an agreed strategy (e.g., verbally, or non-verbally) to trusted adults in 90% of situations where she experiences heightened emotional states, as observed by educational staff.<br><br><em>Note: This outcome partially addresses the communication aspect of emotional shutdowns but is weak in several ways: (1) It assumes Amelia will be able to communicate in 90% of situations, which may not be realistic given the severity of her shutdowns; (2) It does not address prevention of shutdowns or recovery strategies; (3) "Heightened emotional states" is vague and doesn't distinguish between different levels of distress; (4) It focuses only on expression to adults, not on supporting Amelia when she is unable to communicate. This should be redesigned to include: recognition of early warning signs of shutdowns, strategies to prevent escalation, alternative communication methods during shutdowns, and support protocols when verbal communication is not possible.</em></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1219,7 +1219,7 @@
                             <span class="label label-need">NEED 5</span>
                             <div class="need-text">Amelia experiences internal and external meltdowns as well as emotional 'shutdowns' where she is unable to communicate with those around her. When this happens, Amelia is unable to engage in communication with others.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. While E5 partially relates, a specific outcome is needed that addresses reducing the frequency and/or intensity of meltdowns and shutdowns, supporting recovery, and ensuring safety and dignity during these episodes, with measurable indicators such as frequency, duration, and recovery time.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1227,7 +1227,7 @@
                             <span class="label label-need">NEED 6</span>
                             <div class="need-text">Amelia is vulnerable in social situations due to her limited social and emotional understanding.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses developing Amelia's social and emotional understanding to reduce vulnerability, with measurable indicators such as ability to identify safe/unsafe situations, appropriate responses to social scenarios, or seeking help when needed.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1235,7 +1235,7 @@
                             <span class="label label-need">NEED 7</span>
                             <div class="need-text">Amelia shows limited understanding or recognition of her own emotional state.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. While E5 addresses expressing emotions, a specific outcome is needed that focuses on developing Amelia's ability to recognize and understand her own emotional states (emotional literacy/interoception), with measurable indicators such as correctly identifying emotions in herself, using emotion vocabulary, or recognizing early warning signs of emotional escalation.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1243,7 +1243,7 @@
                             <span class="label label-need">NEED 8</span>
                             <div class="need-text">Routine changes can heighten anxiety. Transitions are very difficult. She takes a long time to settle in a new environment.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses supporting Amelia through transitions and routine changes, with measurable indicators such as reduced anxiety during transitions (measured via validated tools), decreased settling time in new environments, or successful use of transition supports.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1261,7 +1261,7 @@
                             <span class="label label-need">NEED SENSORY 1</span>
                             <div class="need-text">Amelia presents with sensory processing and regulation difficulties impacting on her ability to attend and concentrate for learning, emotional, regulation and her independence skills and social interaction.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong>E7:</strong> Amelia will identify and utilise at least three effective strategies when sensory overload occurs, for example making use of a quiet space in the learning environment, as verified by education leaders.<br><br><em>Note: This outcome is weak as: (1) It only addresses response to sensory overload after it occurs, not prevention or ongoing sensory regulation; (2) "Identify and utilise" lacks specificity about independence level, frequency, or effectiveness; (3) "Verified by education leaders" is vague about measurement method; (4) It does not address the broader impact on attention, concentration, emotional regulation, and social interaction mentioned in the need. This should be redesigned to include: proactive sensory regulation strategies, measurable improvements in attention/concentration/emotional regulation, baseline and target data for strategy use, and objective measures of reduced sensory overload frequency/intensity.</em></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1269,7 +1269,7 @@
                             <span class="label label-need">NEED SENSORY 2</span>
                             <div class="need-text">Amelia has always been sensitive to all sorts of stimuli, especially touch, noise, and smells. Amelia's parents report that Amelia presents with sensitivity across all of the senses, from sounds such as burping, the sound of paper rubbing, screaming, low level machine noises such as air con. In addition, they note that flashing lights can be distressing for Amelia.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses managing multi-sensory hypersensitivity through environmental modifications and/or desensitization strategies, with measurable indicators of reduced distress responses to specific sensory stimuli.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1277,7 +1277,7 @@
                             <span class="label label-need">NEED SENSORY 3</span>
                             <div class="need-text">She startles very easily.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses reducing startle responses through environmental modifications and/or interventions, with measurable indicators of frequency and intensity of startle reactions.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1285,7 +1285,7 @@
                             <span class="label label-need">NEED SENSORY 4</span>
                             <div class="need-text">Flare ups related to CPRS dramatically increase Amelia's sensitivity, to the point where she cannot tolerate even at the lightest of touch.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses managing increased tactile sensitivity during CRPS flare-ups, ensuring appropriate environmental modifications and support protocols are in place to minimize tactile contact during high-sensitivity periods.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1293,7 +1293,7 @@
                             <span class="label label-need">NEED SENSORY 5</span>
                             <div class="need-text">Amelia experiences extreme hypersensitivity in response to noise, especially loud or unexpected noise leading to significant distress. She finds it very difficult to attend in an environment with background noise.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses providing acoustic modifications to reduce noise exposure and measuring Amelia's improved ability to attend and learn in appropriately modified auditory environments, with baseline and target data for attention/distress levels.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1301,7 +1301,7 @@
                             <span class="label label-need">NEED SENSORY 6</span>
                             <div class="need-text">She is very easily distracted by minimal amounts of auditory and visual stimuli.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses reducing auditory and visual distractions in learning environments and measuring improvements in attention and task completion in modified environments.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1309,7 +1309,7 @@
                             <span class="label label-need">NEED SENSORY 7</span>
                             <div class="need-text">Amelia becomes distressed in busy, sensory rich environments. This can be very overwhelming and result in difficulties identifying who is speaking and where the voice or noise is coming from.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. While E7 partially relates to sensory overload, a specific outcome is needed that addresses reducing exposure to busy/sensory-rich environments and providing appropriate supports (e.g., modified environments, breaks, quiet spaces) with measurable indicators of reduced distress and improved auditory processing in these contexts.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1317,7 +1317,7 @@
                             <span class="label label-need">NEED SENSORY 8</span>
                             <div class="need-text">Amelia displays significant sensitivity towards tactile stimuli. This impacts greatly on the clothing she finds comfortable to wear. She intensely dislikes self-care activities such as nail cutting, face washing, washing and brushing her hair and brushing her teeth.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses supporting Amelia's tactile sensitivities in daily living activities, with measurable indicators such as tolerance for self-care activities, independence in personal care, or reduced distress during necessary tactile experiences.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1325,7 +1325,7 @@
                             <span class="label label-need">NEED SENSORY 9</span>
                             <div class="need-text">Amelia does eat a variety of foods. She is highly sensitive to smells.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses managing olfactory hypersensitivity through environmental modifications and supports, with measurable indicators of reduced distress responses to smells in educational/daily environments.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1333,7 +1333,7 @@
                             <span class="label label-need">NEED SENSORY 10</span>
                             <div class="need-text">Dr Juliet Staddon explains that Amelia has difficulties with body temperature regulation, always being hot which is noted in people with autism due to difficulty to regulate body temperature due to sensory integration.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses providing environmental temperature controls and supports for thermoregulation difficulties, with measurable indicators of Amelia's comfort and ability to participate in learning despite temperature dysregulation.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1341,7 +1341,7 @@
                             <span class="label label-need">NEED SENSORY 11</span>
                             <div class="need-text">Amelia has difficulties grading the amount of force she needs to use. She seeks proprioceptive feedback by chewing on non-food items.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses providing appropriate proprioceptive supports (e.g., safe chewing tools, movement breaks, heavy work activities) and measuring improved force grading and reduced inappropriate proprioceptive seeking behaviors.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1349,7 +1349,7 @@
                             <span class="label label-need">NEED SENSORY 12</span>
                             <div class="need-text">Amelia is sensitive to movement, she trips and falls easily and does not like positions that require her to tilt her head off balance.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses supporting Amelia's vestibular sensitivities through environmental modifications and/or interventions, with measurable indicators such as reduced falls, increased tolerance for movement activities, or improved safety awareness.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1357,7 +1357,7 @@
                             <span class="label label-need">NEED SENSORY 13</span>
                             <div class="need-text">Amelia finds integrating sensory input and maintaining a degree of regulation difficult. This will cause her to tire quickly throughout the day due to the additional demands she faces within the learning and social environments.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses managing fatigue related to sensory integration difficulties through appropriate breaks, sensory supports, and schedule modifications, with measurable indicators of sustained attention/engagement throughout the day.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1365,7 +1365,7 @@
                             <span class="label label-need">NEED SENSORY 14</span>
                             <div class="need-text">Amelia finds multisensory processing (i.e., ability to receive and process information from a variety of senses or within a busy and sensory-rich environment) overwhelming.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. While E7 partially relates, a specific outcome is needed that addresses providing low-sensory learning environments and measuring Amelia's improved ability to process information when sensory demands are appropriately reduced, with baseline and target data for task performance in modified environments.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1373,7 +1373,7 @@
                             <span class="label label-need">NEED SENSORY 15</span>
                             <div class="need-text">Amelia has difficulties with interoception including the regulation of temperature and satiety.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses developing interoceptive awareness and providing external supports/monitoring for temperature and hunger cues, with measurable indicators such as improved recognition of internal states or successful use of external prompts/schedules.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1381,7 +1381,7 @@
                             <span class="label label-need">NEED SENSORY 16</span>
                             <div class="need-text">Amelia dislikes being overheated and rarely agrees to wear a coat. However, her right limb, which is affected by CRPS requires warmth as its temperature drops very quickly. She does not register this and requires an adult to monitor whether it is an appropriate temperature.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses monitoring and managing the temperature of Amelia's CRPS-affected limb while accommodating her thermoregulation difficulties, with protocols for adult monitoring and measurement of limb temperature maintenance within therapeutic range.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1389,7 +1389,7 @@
                             <span class="label label-need">NEED SENSORY 17</span>
                             <div class="need-text">Amelia does not appear to register hunger and will go up to 9 hours without eating until she suddenly feels ravenous.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses establishing regular eating schedules and external prompts to support nutrition despite poor hunger awareness, with measurable indicators such as adherence to scheduled meals/snacks and maintenance of stable energy levels throughout the day.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1397,7 +1397,7 @@
                             <span class="label label-need">NEED SENSORY 18</span>
                             <div class="need-text">Amelia's mood is easily affected by environmental or sensory changes, especially when things occur that she is not expecting.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses reducing unexpected sensory/environmental changes and supporting Amelia's emotional regulation when changes occur, with measurable indicators of mood stability and reduced negative reactions to sensory changes.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1405,7 +1405,7 @@
                             <span class="label label-need">NEED SENSORY 19</span>
                             <div class="need-text">She has an aversion to labels and stickers. Amelia's parents report that the sight or touch of labels make Amelia feel sick and that she is not able to touch items that have had a sticky label on.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses removing labels/stickers from Amelia's environment and materials to prevent distress, with protocols for label-free resources and supports.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1413,7 +1413,7 @@
                             <span class="label label-need">NEED MOTOR 1</span>
                             <div class="need-text">Amelia has a comorbid complex diagnostic profile impacting on her physical presentation including Chronic Primary Pain Regional Pain Syndrome (CRPS), Chronic Spontaneous Urticaria (CSU) (hives) and Angioedema (swelling under the skin surface due to allergic reaction) caused by a constant state of hypersensitivity to the body.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses managing the impact of CRPS, CSU, and Angioedema on educational participation, with measurable indicators of symptom management, reduced impact on daily functioning, and appropriate medical/educational supports in place.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1421,7 +1421,7 @@
                             <span class="label label-need">NEED MOTOR 2</span>
                             <div class="need-text">Chronic Spontaneous Urticaria (CSU) is a common and distressing skin condition that causes red, raised, itchy and sometimes painful hives or wheals (raised rash or patches) on the skin. Triggers for this may include a variety of factors including food stress, and environmental factors that can trigger Amelia's symptoms. Both CRPS and CSU are debilitating conditions that significantly impact Amelia's physical and mental well-being.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses identifying and managing CSU triggers, with measurable indicators such as reduced frequency/severity of outbreaks, successful trigger avoidance, and maintained engagement in educational activities despite CSU symptoms.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1429,7 +1429,7 @@
                             <span class="label label-need">NEED MOTOR 3</span>
                             <div class="need-text">CRPS causes episodes of pain that can vary in duration; some may last only a few weeks, while others may persist for a more extended period. Amelia's pain flares can be so debilitating that she is unable to get out of bed. During severe periods, Amelia is wheelchair-bound and requires physical support and environmental adaptations to manage her daily activities.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong>E6:</strong> Amelia will successfully transition to a full time EOTIS package, maintaining active engagement in her educational activities at least 80% of the time, whether attending in-person or through alternative educational provisions. She will be able to request support with personal care and mobility from a key adult when required.<br><br><em>Note: This outcome is weak and does not adequately address this need for several reasons: (1) "Successfully transition to full time EOTAS" is about placement/attendance rather than managing CRPS pain episodes and mobility needs; (2) The 80% engagement target does not account for the variability and severity of CRPS pain flares described in the need; (3) "Request support with personal care and mobility" is minimal compared to the need's description of being wheelchair-bound and unable to get out of bed during severe periods; (4) There are no measures related to pain management, environmental adaptations, or functional mobility during different phases of CRPS. This should be redesigned to include: specific supports during pain flares, environmental adaptations for wheelchair access, pain management strategies with measurable outcomes, functional mobility goals across different pain levels, and realistic expectations for engagement that account for severe pain episodes.</em></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1437,7 +1437,7 @@
                             <span class="label label-need">NEED MOTOR 4</span>
                             <div class="need-text">Although overall Amelia's pain has improved, this journey has not followed a linear trajectory of continuous improvement. Rather there have been times where her pain has worsened, and her function has decreased. She continues to experience times where her pain increases and during these periods her leg remains sensitive to touch. She is unable to fully straighten her right leg and continues to work on this aspect of physical function.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses supporting Amelia through fluctuating pain and function levels, with realistic goals for physical function (e.g., leg extension), pain management strategies, and appropriate modifications during periods of increased pain/decreased function.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1445,7 +1445,7 @@
                             <span class="label label-need">NEED MOTOR 5</span>
                             <div class="need-text">Her autism and ADHD diagnoses impact on how pain is experienced and make self-managing pain more challenging.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses developing autism and ADHD-appropriate pain management strategies, with measurable indicators of Amelia's ability to communicate pain levels, use pain management techniques, and external supports needed given difficulties with self-management.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1453,7 +1453,7 @@
                             <span class="label label-need">NEED MOTOR 6</span>
                             <div class="need-text">Cold weather tends to worsen her pain symptoms.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses environmental temperature control and cold weather accommodations to minimize pain exacerbation, with protocols for temperature management and modified expectations during cold weather periods.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
@@ -1461,7 +1461,7 @@
                             <span class="label label-need">NEED MOTOR 7</span>
                             <div class="need-text">Amelia has a severe biopsychosocial pain condition that predominantly affects her lower limbs. This has limited her ability to stand up, transfer or walk. This impacts her ability to access education and particularly educational settings which are not adapted for accessibility. This condition is further complicated by Amelia's Autism diagnosis which alters her perspective and causes issues with sensory perception and her ability to understand how to manage her pain. Amelia also has anxiety and struggles to manage this which also impacts upon her ability to function.</div>
                             <span class="label label-outcome">Outcomes</span>
-                            <div class="outcome-text">Add outcome(s) linked to this need here</div>
+                            <div class="outcome-text"><strong><em>No relevant outcome matched to this need. While E6 partially addresses educational access, a comprehensive outcome is needed that specifically addresses: (1) accessible educational settings with appropriate adaptations for mobility limitations; (2) holistic pain management considering the biopsychosocial nature and intersection with autism, sensory issues, and anxiety; (3) functional mobility goals; (4) educational engagement that accounts for pain-related limitations. Measurable indicators should include environmental accessibility audits, pain management strategy use, functional mobility assessments, and educational participation rates that recognize the severe impact of this condition.</em></strong></div>
                             <span class="label label-provision">Provision</span>
                             <div class="provision-text">Add provision(s) linked to this need here</div>
                         </div>
