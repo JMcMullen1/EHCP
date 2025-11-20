@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognition and Learning</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: -1000px 0;
+            }
+            100% {
+                background-position: 1000px 0;
+            }
+        }
+
+        @keyframes goldPulse {
+            0%, 100% {
+                box-shadow: 0 6px 20px rgba(218, 165, 32, 0.3);
+            }
+            50% {
+                box-shadow: 0 8px 30px rgba(218, 165, 32, 0.5);
+            }
+        }
+
+        /* Golden Thread Section */
+        .golden-thread-container {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 50%, #fef3c7 100%);
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 50px;
+            box-shadow: 0 8px 30px rgba(218, 165, 32, 0.3);
+            animation: goldPulse 3s ease-in-out infinite;
+        }
+
+        .golden-thread-title {
+            font-size: 2.5em;
+            font-weight: 800;
+            background: linear-gradient(135deg, #d4af37 0%, #f4d03f 25%, #ffd700 50%, #f4d03f 75%, #d4af37 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-align: center;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: shimmer 3s linear infinite;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .column {
+            width: 100%;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .column-header {
+            background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+            color: #7c2d12;
+            padding: 15px;
+            border-radius: 10px 10px 0 0;
+            font-size: 1.2em;
+            font-weight: 700;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .column-header:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(212, 175, 55, 0.4);
+        }
+
+        .column-content {
+            background: white;
+            border-radius: 0 0 10px 10px;
+            padding: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .need-block {
+            background: linear-gradient(135deg, #fefefe 0%, #fafbfc 100%);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-left: 4px solid #d4af37;
+            transition: all 0.3s ease;
+        }
+
+        .need-block:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.2);
+        }
+
+        .label {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: transform 0.2s ease;
+        }
+
+        .label:hover {
+            transform: scale(1.05);
+        }
+
+        .label-need {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            color: #1e40af;
+            box-shadow: 0 2px 8px rgba(30, 64, 175, 0.2);
+        }
+
+        .label-outcome {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            color: #065f46;
+            box-shadow: 0 2px 8px rgba(6, 95, 70, 0.2);
+        }
+
+        .label-provision {
+            background: linear-gradient(135deg, #fed7aa 0%, #fdba74 100%);
+            color: #9a3412;
+            box-shadow: 0 2px 8px rgba(154, 52, 18, 0.2);
+        }
+
+        .need-text, .outcome-text, .provision-text {
+            background: white;
+            padding: 12px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            border: 1px solid #e5e7eb;
+            color: #000000;
+            transition: all 0.3s ease;
+        }
+
+        .need-text:hover, .outcome-text:hover, .provision-text:hover {
+            background: #f9fafb;
+            border-color: #d1d5db;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .golden-thread-container {
+                padding: 20px;
+            }
+
+            .golden-thread-title {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Cognition and Learning Section -->
+        <div class="golden-thread-container">
+            <h2 class="golden-thread-title">Cognition and Learning</h2>
+
+            <div class="column">
+                <div class="column-header">Cognition and Learning</div>
+                <div class="column-content">
+                    <div class="need-block">
+                        <span class="label label-need">NEED 1</span>
+                        <div class="need-text">Amelia's progress in learning is affected by significant barriers including chronic regional pain syndrome (CRPS), Autism, ADHD and the multi-faceted challenges associated with these conditions.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses supporting Amelia's learning progress while managing the impact of CRPS, Autism, and ADHD, with specific measurable indicators of academic progress despite these barriers.</em></strong></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED 2</span>
+                        <div class="need-text">English presents more of a challenge for Amelia, however, her single word reading skills, reading fluency, and comprehension all fall within the average range suggesting that she has the foundational skills necessary for continued growth in this area.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong>E3:</strong> <del>Amelia will be meeting age related expectations in literacy (specifically spelling, punctuation and grammar) and numeracy as evidenced by appropriate assessments and ongoing teacher evaluations.</del><br><br><strong><em>SMART Revision: By [end of academic year/specific date], Amelia will improve her spelling accuracy from [baseline X%] to [target Y%] on age-appropriate curriculum spelling tests, demonstrate correct use of punctuation and grammar in 7 out of 10 writing samples as measured by [specific rubric], and achieve a standardized score of [target score] on the [named numeracy assessment e.g., GL Assessment Mathematics Progress Test], representing progress appropriate to her learning profile with Dyslexia. Progress will be reviewed termly through specified assessments and teacher work sampling.</em></strong><br><br><em>Note: This outcome is weak and vague. It lacks specificity in several ways: (1) "Age-related expectations" is undefined and difficult to measure; (2) It combines multiple distinct skills (spelling, punctuation, grammar, numeracy) without separate baselines or targets; (3) "Appropriate assessments" is not specified; (4) There is no timeframe or baseline for measuring progress; (5) It does not acknowledge Amelia's Dyslexia and the need for differentiated expectations. This outcome should be redesigned to include: specific baseline scores, targeted improvement goals for each skill area separately, named standardized assessments, clear timeframes, and realistic expectations given Amelia's learning profile.</em></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED 3</span>
+                        <div class="need-text">Amelia's specific learning difficulties, including Dyslexia, pose challenges to her progress especially in the subject of English. She experiences anxiety around understanding and completing learning tasks and exhibits noticeable fatigue during extended writing tasks.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong>E4:</strong> <del>Amelia will utilise at least two alternative methods for recording information in academic settings, such as speech-to-text software or word processors and report a positive impact on her learning experience.</del><br><br><strong><em>SMART Revision: By [end of term/specific date], Amelia will independently use at least two alternative recording methods (e.g., speech-to-text software and word processor) for 80% of written assignments requiring more than [X words/paragraphs]. Impact will be measured objectively by: (1) completion rate of written assignments increasing from [baseline %] to [target %], (2) word count increasing from average [X words] to [Y words] per assignment, (3) self-reported fatigue levels during writing tasks reducing from [baseline score] to [target score] on a 1-10 scale, and (4) work quality maintained or improved as evidenced by teacher assessment rubrics. Independence level will be tracked from initial adult support to independent initiation and use.</em></strong><br><br><em>Note: This outcome is weak as: (1) "Report a positive impact" is subjective and poorly defined; (2) It lacks baseline data on current usage; (3) There is no timeframe or measurement of "utilise" (frequency, independence level); (4) The outcome doesn't specify how impact will be measured objectively. This should be redesigned to include: specific frequency of use (e.g., 80% of written assignments), measures of independence, objective metrics of impact such as completion rates, quality of work produced, or reduced fatigue levels, and clear timeframes.</em></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED 4</span>
+                        <div class="need-text">Amelia has spelling, word-copying and handwriting difficulties.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong><em>No relevant outcome matched to this need. While E3 and E4 partially relate, a specific outcome is needed that addresses reducing the impact of handwriting and word-copying difficulties through accommodations and/or interventions, with measurable indicators of improved access to the curriculum.</em></strong></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED 5</span>
+                        <div class="need-text">Amelia's processing skills are significantly different from her other cognitive abilities which is evident in her writing skills. These challenges lead to understandable frustrations for her as she struggles to articulate her ideas in writing at the same speed and precision with which she can verbalise them.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong><em>No relevant outcome matched to this need. While E4 partially addresses alternative recording methods, a specific outcome is needed that measures reduction in frustration and improved ability to express ideas through supported writing methods, with comparison to verbal expression capabilities.</em></strong></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED 6</span>
+                        <div class="need-text">Amelia has focus, concentration, problem-solving, executive functioning, impulsivity, planning, organisational and emotional, behavioural and cognitive regulation difficulties consistent with her diagnosis of ADHD. Her emotional regulation and executive functioning difficulties impact her readiness to learn. Her hyperactive brain can cause her to build up excess energy during the day.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses improving executive functioning skills (planning, organization, focus) and managing ADHD-related difficulties to increase readiness to learn, with measurable indicators such as task completion rates, use of organizational strategies, or engagement in learning activities.</em></strong></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED 7</span>
+                        <div class="need-text">Amelia has gaps in her learning due to her time out of formal education.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that specifically addresses closing identified learning gaps with baseline assessments, targeted skills/knowledge areas, and measurable progress indicators over time.</em></strong></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED 8</span>
+                        <div class="need-text">A Behaviour Optometry assessment found that Amelia does show some level of reduced visual perceptual skill compared to age matched individuals. She will likely find it quite difficult to easily make sense of what she is seeing and orient herself if she is presented with visually crowded information such as a book with lots of dense text. She will find things like word searches more difficult. She may also struggle with concepts like mind maps and may find interpreting graphs and pie charts more challenging than other young people her age. Reading text across coloured background pictures (as may be seen in some branding or picture books) will also be more difficult for Amelia than her peers.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses providing appropriate visual presentation of materials (reduced visual clutter, appropriate spacing, clear backgrounds) and measuring Amelia's improved ability to access and process visual information in learning materials.</em></strong></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED 9</span>
+                        <div class="need-text">A Behaviour Optometrist reports that teaching Amelia with the use of resources such as pie charts and graphs will be challenging for her. However, it is thought that if a pie chart is the only item that is presented on a page, with no disturbing backgrounds, that Amelia may understand this very easily. This may be the case with other visually demanding tasks (eg mind maps), Amelia may find them useful but needs to have plenty space on the page to use the information efficiently.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses Amelia's ability to interpret visual learning tools (graphs, pie charts, mind maps) when presented appropriately (single item per page, clear backgrounds, adequate spacing), with measurable indicators of comprehension.</em></strong></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
