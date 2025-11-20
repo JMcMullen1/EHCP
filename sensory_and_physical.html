@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensory and Physical</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: -1000px 0;
+            }
+            100% {
+                background-position: 1000px 0;
+            }
+        }
+
+        @keyframes goldPulse {
+            0%, 100% {
+                box-shadow: 0 6px 20px rgba(218, 165, 32, 0.3);
+            }
+            50% {
+                box-shadow: 0 8px 30px rgba(218, 165, 32, 0.5);
+            }
+        }
+
+        /* Golden Thread Section */
+        .golden-thread-container {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 50%, #fef3c7 100%);
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 50px;
+            box-shadow: 0 8px 30px rgba(218, 165, 32, 0.3);
+            animation: goldPulse 3s ease-in-out infinite;
+        }
+
+        .golden-thread-title {
+            font-size: 2.5em;
+            font-weight: 800;
+            background: linear-gradient(135deg, #d4af37 0%, #f4d03f 25%, #ffd700 50%, #f4d03f 75%, #d4af37 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-align: center;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: shimmer 3s linear infinite;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-content {
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .column-header {
+            background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+            color: #7c2d12;
+            padding: 15px;
+            border-radius: 10px 10px 0 0;
+            font-size: 1.2em;
+            font-weight: 700;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .column-header:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(212, 175, 55, 0.4);
+        }
+
+        .column-content {
+            background: white;
+            border-radius: 0 0 10px 10px;
+            padding: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .need-block {
+            background: linear-gradient(135deg, #fefefe 0%, #fafbfc 100%);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-left: 4px solid #d4af37;
+            transition: all 0.3s ease;
+        }
+
+        .need-block:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.2);
+        }
+
+        .label {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: transform 0.2s ease;
+        }
+
+        .label:hover {
+            transform: scale(1.05);
+        }
+
+        .label-need {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            color: #1e40af;
+            box-shadow: 0 2px 8px rgba(30, 64, 175, 0.2);
+        }
+
+        .label-outcome {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            color: #065f46;
+            box-shadow: 0 2px 8px rgba(6, 95, 70, 0.2);
+        }
+
+        .label-provision {
+            background: linear-gradient(135deg, #fed7aa 0%, #fdba74 100%);
+            color: #9a3412;
+            box-shadow: 0 2px 8px rgba(154, 52, 18, 0.2);
+        }
+
+        .need-text, .outcome-text, .provision-text {
+            background: white;
+            padding: 12px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            border: 1px solid #e5e7eb;
+            color: #000000;
+            transition: all 0.3s ease;
+        }
+
+        .need-text:hover, .outcome-text:hover, .provision-text:hover {
+            background: #f9fafb;
+            border-color: #d1d5db;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .golden-thread-container {
+                padding: 20px;
+            }
+
+            .golden-thread-title {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sensory and Physical Section -->
+        <div class="golden-thread-container">
+            <h2 class="golden-thread-title">Sensory / Physical</h2>
+
+            <div class="section-content">
+                <div class="column-header">Sensory / Physical</div>
+                <div class="column-content">
+                    <div class="need-block">
+                        <span class="label label-need">NEED SENSORY 1</span>
+                        <div class="need-text">Amelia presents with sensory processing and regulation difficulties impacting on her ability to attend and concentrate for learning, emotional, regulation and her independence skills and social interaction.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong>E7:</strong> <del>Amelia will identify and utilise at least three effective strategies when sensory overload occurs, for example making use of a quiet space in the learning environment, as verified by education leaders.</del><br><br><strong><em>SMART Revision: By [end of term/specific date], Amelia will demonstrate effective sensory regulation through: (1) Proactively using at least [3] preventative sensory regulation strategies (e.g., scheduled sensory breaks every [X] minutes, use of noise-cancelling headphones, fidget tools) independently in 70% of learning sessions, increasing from baseline of [X%]; (2) When sensory overload occurs, independently recognizing early warning signs and implementing response strategies (quiet space use, sensory toolkit, break requests) within [2 minutes] of onset in 60% of episodes, improving from baseline of [X%]; (3) Frequency of sensory overload episodes decreasing from average of [X per day/week] to [Y per day/week]; (4) Sustained attention during learning tasks improving from average of [X minutes] to [Y minutes] as measured by time-sampling observations. Progress tracked via daily sensory logs, observation records, and attention duration data collected [weekly/daily].</em></strong><br><br><em>Note: This outcome is weak as: (1) It only addresses response to sensory overload after it occurs, not prevention or ongoing sensory regulation; (2) "Identify and utilise" lacks specificity about independence level, frequency, or effectiveness; (3) "Verified by education leaders" is vague about measurement method; (4) It does not address the broader impact on attention, concentration, emotional regulation, and social interaction mentioned in the need. This should be redesigned to include: proactive sensory regulation strategies, measurable improvements in attention/concentration/emotional regulation, baseline and target data for strategy use, and objective measures of reduced sensory overload frequency/intensity.</em></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED SENSORY 2</span>
+                        <div class="need-text">Amelia has always been sensitive to all sorts of stimuli, especially touch, noise, and smells. Amelia's parents report that Amelia presents with sensitivity across all of the senses, from sounds such as burping, the sound of paper rubbing, screaming, low level machine noises such as air con. In addition, they note that flashing lights can be distressing for Amelia.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses managing multi-sensory hypersensitivity through environmental modifications and/or desensitization strategies, with measurable indicators of reduced distress responses to specific sensory stimuli.</em></strong></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED SENSORY 3</span>
+                        <div class="need-text">She startles very easily.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses reducing startle responses through environmental modifications and/or interventions, with measurable indicators of frequency and intensity of startle reactions.</em></strong></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED SENSORY 4</span>
+                        <div class="need-text">Flare ups related to CPRS dramatically increase Amelia's sensitivity, to the point where she cannot tolerate even at the lightest of touch.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses managing increased tactile sensitivity during CRPS flare-ups, ensuring appropriate environmental modifications and support protocols are in place to minimize tactile contact during high-sensitivity periods.</em></strong></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED SENSORY 5</span>
+                        <div class="need-text">Amelia experiences extreme hypersensitivity in response to noise, especially loud or unexpected noise leading to significant distress. She finds it very difficult to attend in an environment with background noise.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses providing acoustic modifications to reduce noise exposure and measuring Amelia's improved ability to attend and learn in appropriately modified auditory environments, with baseline and target data for attention/distress levels.</em></strong></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED SENSORY 6</span>
+                        <div class="need-text">She is very easily distracted by minimal amounts of auditory and visual stimuli.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses reducing auditory and visual distractions in learning environments and measuring improvements in attention and task completion in modified environments.</em></strong></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED SENSORY 7</span>
+                        <div class="need-text">Amelia becomes distressed in busy, sensory rich environments. This can be very overwhelming and result in difficulties identifying who is speaking and where the voice or noise is coming from.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong><em>No relevant outcome matched to this need. While E7 partially relates to sensory overload, a specific outcome is needed that addresses reducing exposure to busy/sensory-rich environments and providing appropriate supports (e.g., modified environments, breaks, quiet spaces) with measurable indicators of reduced distress and improved auditory processing in these contexts.</em></strong></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED SENSORY 8</span>
+                        <div class="need-text">Amelia displays significant sensitivity towards tactile stimuli. This impacts greatly on the clothing she finds comfortable to wear. She intensely dislikes self-care activities such as nail cutting, face washing, washing and brushing her hair and brushing her teeth.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses supporting Amelia's tactile sensitivities in daily living activities, with measurable indicators such as tolerance for self-care activities, independence in personal care, or reduced distress during necessary tactile experiences.</em></strong></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED SENSORY 9</span>
+                        <div class="need-text">Amelia does eat a variety of foods. She is highly sensitive to smells.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses managing olfactory hypersensitivity through environmental modifications and supports, with measurable indicators of reduced distress responses to smells in educational/daily environments.</em></strong></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED SENSORY 10</span>
+                        <div class="need-text">Dr Juliet Staddon explains that Amelia has difficulties with body temperature regulation, always being hot which is noted in people with autism due to difficulty to regulate body temperature due to sensory integration.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses providing environmental temperature controls and supports for thermoregulation difficulties, with measurable indicators of Amelia's comfort and ability to participate in learning despite temperature dysregulation.</em></strong></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED SENSORY 11</span>
+                        <div class="need-text">Amelia has difficulties grading the amount of force she needs to use. She seeks proprioceptive feedback by chewing on non-food items.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses providing appropriate proprioceptive supports (e.g., safe chewing tools, movement breaks, heavy work activities) and measuring improved force grading and reduced inappropriate proprioceptive seeking behaviors.</em></strong></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED SENSORY 12</span>
+                        <div class="need-text">Amelia is sensitive to movement, she trips and falls easily and does not like positions that require her to tilt her head off balance.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses supporting Amelia's vestibular sensitivities through environmental modifications and/or interventions, with measurable indicators such as reduced falls, increased tolerance for movement activities, or improved safety awareness.</em></strong></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED SENSORY 13</span>
+                        <div class="need-text">Amelia finds integrating sensory input and maintaining a degree of regulation difficult. This will cause her to tire quickly throughout the day due to the additional demands she faces within the learning and social environments.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses managing fatigue related to sensory integration difficulties through appropriate breaks, sensory supports, and schedule modifications, with measurable indicators of sustained attention/engagement throughout the day.</em></strong></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED SENSORY 14</span>
+                        <div class="need-text">Amelia finds multisensory processing (i.e., ability to receive and process information from a variety of senses or within a busy and sensory-rich environment) overwhelming.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong><em>No relevant outcome matched to this need. While E7 partially relates, a specific outcome is needed that addresses providing low-sensory learning environments and measuring Amelia's improved ability to process information when sensory demands are appropriately reduced, with baseline and target data for task performance in modified environments.</em></strong></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED SENSORY 15</span>
+                        <div class="need-text">Amelia has difficulties with interoception including the regulation of temperature and satiety.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses developing interoceptive awareness and providing external supports/monitoring for temperature and hunger cues, with measurable indicators such as improved recognition of internal states or successful use of external prompts/schedules.</em></strong></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED SENSORY 16</span>
+                        <div class="need-text">Amelia dislikes being overheated and rarely agrees to wear a coat. However, her right limb, which is affected by CRPS requires warmth as its temperature drops very quickly. She does not register this and requires an adult to monitor whether it is an appropriate temperature.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses monitoring and managing the temperature of Amelia's CRPS-affected limb while accommodating her thermoregulation difficulties, with protocols for adult monitoring and measurement of limb temperature maintenance within therapeutic range.</em></strong></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED SENSORY 17</span>
+                        <div class="need-text">Amelia does not appear to register hunger and will go up to 9 hours without eating until she suddenly feels ravenous.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses establishing regular eating schedules and external prompts to support nutrition despite poor hunger awareness, with measurable indicators such as adherence to scheduled meals/snacks and maintenance of stable energy levels throughout the day.</em></strong></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED SENSORY 18</span>
+                        <div class="need-text">Amelia's mood is easily affected by environmental or sensory changes, especially when things occur that she is not expecting.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses reducing unexpected sensory/environmental changes and supporting Amelia's emotional regulation when changes occur, with measurable indicators of mood stability and reduced negative reactions to sensory changes.</em></strong></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED SENSORY 19</span>
+                        <div class="need-text">She has an aversion to labels and stickers. Amelia's parents report that the sight or touch of labels make Amelia feel sick and that she is not able to touch items that have had a sticky label on.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses removing labels/stickers from Amelia's environment and materials to prevent distress, with protocols for label-free resources and supports.</em></strong></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED MOTOR 1</span>
+                        <div class="need-text">Amelia has a comorbid complex diagnostic profile impacting on her physical presentation including Chronic Primary Pain Regional Pain Syndrome (CRPS), Chronic Spontaneous Urticaria (CSU) (hives) and Angioedema (swelling under the skin surface due to allergic reaction) caused by a constant state of hypersensitivity to the body.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses managing the impact of CRPS, CSU, and Angioedema on educational participation, with measurable indicators of symptom management, reduced impact on daily functioning, and appropriate medical/educational supports in place.</em></strong></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED MOTOR 2</span>
+                        <div class="need-text">Chronic Spontaneous Urticaria (CSU) is a common and distressing skin condition that causes red, raised, itchy and sometimes painful hives or wheals (raised rash or patches) on the skin. Triggers for this may include a variety of factors including food stress, and environmental factors that can trigger Amelia's symptoms. Both CRPS and CSU are debilitating conditions that significantly impact Amelia's physical and mental well-being.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses identifying and managing CSU triggers, with measurable indicators such as reduced frequency/severity of outbreaks, successful trigger avoidance, and maintained engagement in educational activities despite CSU symptoms.</em></strong></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED MOTOR 3</span>
+                        <div class="need-text">CRPS causes episodes of pain that can vary in duration; some may last only a few weeks, while others may persist for a more extended period. Amelia's pain flares can be so debilitating that she is unable to get out of bed. During severe periods, Amelia is wheelchair-bound and requires physical support and environmental adaptations to manage her daily activities.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong>E6:</strong> <del>Amelia will successfully transition to a full time EOTIS package, maintaining active engagement in her educational activities at least 80% of the time, whether attending in-person or through alternative educational provisions. She will be able to request support with personal care and mobility from a key adult when required.</del><br><br><strong><em>SMART Revision: By [end of academic year/specific date], Amelia will access education through a flexible EOTAS package that accommodates CRPS pain variability: (1) During low-moderate pain periods (Level 1-3 on agreed pain scale), maintain 70% engagement in educational activities for [X] hours per week, increasing from baseline of [Y] hours; (2) During severe pain episodes (Level 4-5), access alternative educational delivery (online, recorded lessons, modified activities) with engagement target of 40% to maintain curriculum access; (3) Environmental adaptations for wheelchair accessibility will be in place and audited [termly], with 100% of learning spaces meeting access requirements; (4) Independently request support for personal care and mobility from key adults in 80% of situations when needed, using agreed communication methods (verbal or alternative); (5) Implement and use documented pain management strategies [X] times per day during educational activities; (6) Functional mobility goals: achieve [specific SMART mobility goal related to physiotherapy targets] as measured by [physiotherapy assessment]. Success measured through attendance logs, engagement tracking by pain level, accessibility audits, support request logs, and physiotherapy progress reports.</em></strong><br><br><em>Note: This outcome is weak and does not adequately address this need for several reasons: (1) "Successfully transition to full time EOTAS" is about placement/attendance rather than managing CRPS pain episodes and mobility needs; (2) The 80% engagement target does not account for the variability and severity of CRPS pain flares described in the need; (3) "Request support with personal care and mobility" is minimal compared to the need's description of being wheelchair-bound and unable to get out of bed during severe periods; (4) There are no measures related to pain management, environmental adaptations, or functional mobility during different phases of CRPS. This should be redesigned to include: specific supports during pain flares, environmental adaptations for wheelchair access, pain management strategies with measurable outcomes, functional mobility goals across different pain levels, and realistic expectations for engagement that account for severe pain episodes.</em></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED MOTOR 4</span>
+                        <div class="need-text">Although overall Amelia's pain has improved, this journey has not followed a linear trajectory of continuous improvement. Rather there have been times where her pain has worsened, and her function has decreased. She continues to experience times where her pain increases and during these periods her leg remains sensitive to touch. She is unable to fully straighten her right leg and continues to work on this aspect of physical function.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses supporting Amelia through fluctuating pain and function levels, with realistic goals for physical function (e.g., leg extension), pain management strategies, and appropriate modifications during periods of increased pain/decreased function.</em></strong></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED MOTOR 5</span>
+                        <div class="need-text">Her autism and ADHD diagnoses impact on how pain is experienced and make self-managing pain more challenging.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses developing autism and ADHD-appropriate pain management strategies, with measurable indicators of Amelia's ability to communicate pain levels, use pain management techniques, and external supports needed given difficulties with self-management.</em></strong></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED MOTOR 6</span>
+                        <div class="need-text">Cold weather tends to worsen her pain symptoms.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong><em>No relevant outcome matched to this need. An outcome is needed that addresses environmental temperature control and cold weather accommodations to minimize pain exacerbation, with protocols for temperature management and modified expectations during cold weather periods.</em></strong></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                    <div class="need-block">
+                        <span class="label label-need">NEED MOTOR 7</span>
+                        <div class="need-text">Amelia has a severe biopsychosocial pain condition that predominantly affects her lower limbs. This has limited her ability to stand up, transfer or walk. This impacts her ability to access education and particularly educational settings which are not adapted for accessibility. This condition is further complicated by Amelia's Autism diagnosis which alters her perspective and causes issues with sensory perception and her ability to understand how to manage her pain. Amelia also has anxiety and struggles to manage this which also impacts upon her ability to function.</div>
+                        <span class="label label-outcome">Outcomes</span>
+                        <div class="outcome-text"><strong><em>No relevant outcome matched to this need. While E6 partially addresses educational access, a comprehensive outcome is needed that specifically addresses: (1) accessible educational settings with appropriate adaptations for mobility limitations; (2) holistic pain management considering the biopsychosocial nature and intersection with autism, sensory issues, and anxiety; (3) functional mobility goals; (4) educational engagement that accounts for pain-related limitations. Measurable indicators should include environmental accessibility audits, pain management strategy use, functional mobility assessments, and educational participation rates that recognize the severe impact of this condition.</em></strong></div>
+                        <span class="label label-provision">Provision</span>
+                        <div class="provision-text">Add provision(s) linked to this need here</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
